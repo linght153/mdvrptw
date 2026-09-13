@@ -1,83 +1,145 @@
-# MDVRPTW 优化算法研究项目（重启基线）
+# MDVRPTW · 种群化大邻域搜索（MA-ALNS）
 
-省级大创《多车场车辆路径问题优化算法研究》研究代码库。
-**2026-09-02 精简式整理后，本目录定为 MDVRPTW（带时间窗）研究重启基地
-（同日由 D:\mdvrp_backup_20260901 重命名为 D:\mdvrptw；算例主线 = pr 系列，
-Cordeau 2001 MDVRPTW，VRP-REP 2017-0012）。**
+多车场带时间窗车辆路径问题（Multi-Depot Vehicle Routing Problem with Time Windows，
+MDVRPTW）的算法研究代码库。核心问题：把 ALNS 内核装进**种群外壳**后，让重组真正
+起作用的最小继承单位是什么 —— 路由，还是车场分配？本仓库给出该判别实验的完整实现、
+组件叠加链、以及与国际主流求解器（pyvrp / HGS）的双口径对照。
 
-## 仓库沿革（重要，先读）
+## 研究概要
 
-- 2026-08 全史：动态需求预测 → 场景化 ALNS → 绿色双目标（D4 路线）多轮实验与论文，
-  经用户拍板判定动态/绿色主线为"前人结论复现"，无独立研究价值（详见
-  `docs/future-directions-alns-mdvrp.md` 与 D:\mdvrp 仓库的 09-02 方向调研文档）。
-- 2026-09-01：D:\mdvrp 执行"回归纯 MDVRP（无 TW）"重构（commit 563e7a4），
-  删除动态/场景化/绿色资产与 MDVRPTW 数据；本目录为其回归前完整快照。
-- 2026-09-02：本目录精简式整理 → 成为 MDVRPTW 重启基地（本次整理）。
-  - **保留**：带 TW 的完整 ALNS 引擎、18 个引擎/TW 回归测试、pr01-20 实例 +
-    pr01-05 官方权威解、无 TW p 系列（green_mdvrp）、引擎验证实验与关键方法论文档。
-  - **移除（git rm，完整可恢复）**：src/forecast、src/green、src/scenario（动态/绿色线）、
-    全部旧论文（docs/paper）、动态验证文档与实验、results/ 旧数据、tmp 渲染与临时文件。
-  - **恢复手段**：`git tag pre-reorg-20260902`（整理前 HEAD）＋
-    `D:\mdvrp_backup_20260901_pre-reorg.bundle`（全历史 bundle，35MB）＋
-    `D:\mdvrp_backup_20260901_results_archive_20260902.zip`（results/，gitignored 不入库）。
-    例：`git checkout pre-reorg-20260902 -- src/scenario` 即可取回任意文件。
-- **姊妹仓库**：D:\mdvrp = 纯 MDVRP（无 TW）演进线。引擎含本目录没有的更新：
-  granular 邻域（0ca54f8）、repair 无 TW 快速路径、车辆数上限硬约束（304153b）、
-  紧绑定死循环修复（2c94aa5），另有 P0-P6 探针（方向探索，已止损）与
-  p01-p23 无 TW 实例（mdvrp_raw .txt 33 个 + green_mdvrp .json 21 个）。
-  **合流决策（何时把演进引擎移植回 TW 线、如何回归 TW 行为）留待方向确定后执行。**
+| 项 | 说明 |
+|---|---|
+| 问题 | MDVRPTW（Cordeau et al. 2001；VRP-REP 数据集 2017-0012）。目标 = 总行驶距离最小；时间窗为硬约束；每车场车辆数有上限；路线最大时长有约束 |
+| 引擎 | 单轨迹 ALNS：destroy / repair 算子族 + RVND 多邻域局部搜索 + 分数 / 接受 / 降温控制。所有机制 config gated、默认关，默认路径行为逐位不变 |
+| 方法 | MA-ALNS：成员种群池 + 锦标赛选择（fitness = cost − κ·best·dc，dc 为池内路由集 Jaccard 距离）+ **车场分配簇级重组** + 改进门隔离预算 + 池内强化 + 预算感知教育 |
+| 对照 | pyvrp 0.13.4（HGS 家族，C++ 内核）：固定迭代与固定时间预算两个口径 |
 
 ## 目录结构
 
-```
-├── src/
-│   ├── core/          # Instance / Solution / objectives（成本+TW+排放惰性引用）/
-│   │                  #   initial_solution / pareto
-│   ├── alns/          # ALNS 引擎（acceptance/archive/parent_selection/selection…）
-│   ├── operators/     # destroy / repair（TW-aware greedy 等）/ local_search（RVND）
-│   ├── solvers/       # standard_alns 入口 + pyvrp_solver（SOTA 对照基线）
-│   ├── evaluation/    # metrics（ScPO 式归一化 / HV / IGD）
-│   └── utils/
-├── data/
-│   ├── mdvrptw_raw/   # ★ pr01-pr20 MDVRPTW 实例（Cordeau 2001 格式，含 TW）
-│   ├── mdvrptw_sol/   # ★ pr01-pr05 官方权威解 .res（BKS 口径）
-│   └── green_mdvrp/   # p01-p23 子集等无 TW MDVRP 实例（跨口径对比用）
-├── tests/             # 18 个引擎 + TW 硬约束回归测试
-├── experiments/       # 15 个：TW 权威验证/静态基准/收敛/路线可视化
-├── scripts/           # parse_cordeau_mdvrptw.py + strict_verification*.py
-├── docs/              # BKS 权威/口径红线/正确性修复史/静态方向调研
-└── 调研成果/          # ALNS/DL/ML-MDVRP 算法综述 + 方向凝练
+```text
+src/               引擎与解法
+  core/            实例 / 解 / 目标函数 / 初始解 / Pareto 档案
+  alns/            ALNS 引擎（接受准则 / 精英档案 / 父代选择 / 算子选择）
+  operators/       destroy / repair / RVND 局部搜索 / 交叉算子
+  solvers/         standard_alns 入口、pyvrp 对照适配
+  evaluation/      评价指标（HV / IGD 等）
+tests/             回归测试（230 项，含时间窗硬约束与增量一致性）
+experiments/       实验脚本：基准 runner / 消融 / 收敛轨迹 / 对照分析
+scripts/           Cordeau 算例解析器（parse_cordeau_mdvrptw.py，tests 与 experiments 共用）
+data/              算例与参照值
+results/           实验输出（逐次运行的 JSON）
+docs/              实验预注册（prereg）与判定（verdict）文档链
 ```
 
-## 权威 BKS 与口径红线（写论文/跑实验必守）
+## 环境与安装
 
-- **pr01-05 MDVRPTW 权威解 = 1083.98 / 1763.07 / 2408.42 / 2958.23 / 3134.04**
-  （官方 .res，浮点欧氏距离口径，math.dist 逐位复现；1217.55 等文献旧值已被改进替代，
-  详见 `docs/bks-verification.md`）。
-- 求解器输出必须用权威解 / TW 违规计数交叉核对再写论文；TW 违规解历史教训
-  见 `docs/tw-hard-constraint-fix.md`。
-- 大实例（≥144 客户）时间预算实验不可逐位复现（系统负载 → 迭代数波动），
-  必须串行 + 独立进程跑，可复现性验证用固定迭代数（详见
-  `docs/rerun-after-tw-fix.md` 与技能 mdvrp-research）。
-- pr06-20 无官方 .res（本目录仅有 pr01-05），做大规模对比需文献值或自行运行 SOTA。
+Python 3.12。
+
+```bash
+pip install numpy scipy pandas pyyaml pyvrp==0.13.4 pytest
+# 路线图与论文图脚本另需：pip install matplotlib
+```
 
 ## 快速开始
 
 ```bash
-# 依赖（无 .venv；可临时复用 D:\mdvrp\.venv 或自建）
-python -m venv .venv && .venv/Scripts/pip install -r requirements.txt
-
-# 测试
+# 1) 全量回归测试
 python -m pytest tests/ -q
 
-# 冒烟：pr01 短预算 ALNS（TW 可行 + 零违规 + 全客户服务）
-python experiments/verify_cordeau_res.py   # 或 scripts/strict_verification.py（多维度验收）
+# 2) 官方解口径核验（pr01 官方 .res：成本 / 容量 / 时间窗 / 客户覆盖）
+python experiments/verify_cordeau_res.py
+
+# 3) 基准 runner（单实例 × 单 seed × 单臂，独立进程）
+python experiments/benchmark_population_ab.py  pr15 42 base 6000    # 探针臂：base|div|cx
+python experiments/benchmark_population_m2.py  pr15 42 popcx_part   # 重组单位判别
+python experiments/benchmark_population_m5.py  pr15 42 popcxge      # 6000 次迭代
+python experiments/benchmark_population_m5.py  pr15 42 popcxge 600  # 600s 时间预算
+
+# 4) 汇总判定（读 results/ 出表）
+python experiments/analyze_population_ab.py
+
+# 5) pyvrp 对照基线（pr01–pr05，每实例 30 s）
+python experiments/benchmark_pyvrp_cordeau.py
 ```
 
-## 重启待办（方向确定后）
+> 注意：请在仓库根目录以 `python -m pytest`（而非裸 `pytest`）运行，使 `src/`、
+> `scripts/` 可被解析。
 
-1. 方向决策（用户思考中；素材：本仓库 `docs/future-directions-alns-mdvrp.md` +
-   D:\mdvrp\docs/three-directions-deep-survey-20260902.md）。
-2. 引擎合流评估：移植 D:\mdvrp 的 granular/车辆数硬约束/死循环修复等演进，
-   在 TW 实例上全量回归（TW 行为不得退化）。
-3. 预注册实验设计（时间预算公平对比、seeds 统计口径，沿用历史协议）。
+## 算例数据（data/）
+
+| 路径 | 内容 |
+|---|---|
+| `mdvrptw_raw/` | pr01–pr20 原始算例（Cordeau 2001 格式，含时间窗），`manifest.json` 为清单 |
+| `mdvrptw_sol/` | pr01–pr05 官方 `.res` 解（口径核验基准） |
+| `green_mdvrp/` | p 系列无时间窗子集（跨口径对照用） |
+| `mdvrptw_bks_2026.json` | pr01–pr20 参照值（1997 官方 .res / 文献 BKS / MDFIHA 2026 新界），整理与口径说明见 `docs/mdvrptw-bks-2026.md` |
+
+参照值口径：pr01–pr05 有官方 `.res`；pr06–pr20 无官方解，参照值取文献 BKS 与
+MDFIHA (2026) fBest 中的更优者。
+
+## 实验结果
+
+以下为 6000 次迭代（s42–44 均值，Δ = 臂 − 单轨迹 base）的组件叠加链；
+原始数据在 `results/`，判定依据见对应 `docs/*-verdict-*.md`。
+
+| 臂 | pr15 | pr16 | pr20 | Δ15 | Δ16 | Δ20 |
+|---|---:|---:|---:|---:|---:|---:|
+| base（单轨迹） | 2664.4 | 3128.0 | 3375.4 | — | — | — |
+| pop（种群池） | 2677.1 | 3029.9 | 3498.6 | +12.7 | −98.1 | +123.2 |
+| popcx_route（路由重组） | 2599.1 | 3078.4 | 3403.4 | −65.3 | −49.6 | +28.1 |
+| popcx_part（车场分配簇重组） | 2594.7 | 3000.0 | 3261.5 | −69.7 | −128.0 | −113.9 |
+| popcxg（+ 改进门） | 2641.8 | 3027.8 | 3357.6 | −22.6 | −100.2 | −17.8 |
+| popcxge（+ 预算感知教育） | 2607.8 | 2926.9 | 3274.9 | −56.6 | −201.1 | −100.5 |
+
+**主判别（10 seeds 配对，方法 vs 单轨迹 base）**
+
+| 实例 | base | MA-ALNS | Δ | 负种子 |
+|---|---:|---:|---:|---:|
+| pr15 | 2640.8 | 2543.7 | −97.1 | 10/10 |
+| pr16 | 3144.5 | 2941.0 | −203.5 | 10/10 |
+| pr20 | 3516.2 | 3300.7 | −215.5 | 10/10 |
+
+**与参照值对照（扩展算例，s42–44 均值）**
+
+| 实例 | 参照值 | MA-ALNS | gap |
+|---|---:|---:|---:|
+| pr01 | 1074.12 | 1104.1 | +2.79% |
+| pr04 | 2814.34 | 2909.0 | +3.36% |
+| pr06 | 3588.78 | 3846.4 | +7.18% |
+| pr07 | 1418.22 | 1435.9 | +1.24% |
+| pr10 | 3465.54 | 3644.5 | +5.16% |
+| pr13 | 2001.81 | 2025.0 | +1.16% |
+
+8 例（pr15、pr16 + 上表 6 例）平均 gap：MA-ALNS **+3.91%**，单轨迹 base +7.35%。
+
+**时间预算口径（600 s，pyvrp 走标准转换）**
+
+| 实例 | 参照 BKS | MA-ALNS 600s | pyvrp 600s |
+|---|---:|---:|---:|
+| pr15 | 2433.15 | 2589.9（+6.44%） | 2577.2（+5.92%） |
+| pr16 | 2836.67 | 3033.4（+6.93%） | 2961.3（+4.40%） |
+| pr20 | 2983.78 | 3681.9（+23.40%） | 3175.7（+6.43%） |
+
+600 s 口径下 pyvrp ≥ MA-ALNS（三实例）；固定迭代主口径下的方向性结论见上表。
+
+> 综合账与数字底稿：`docs/durfix-summary-20260912.md`；等墙钟对照（pr16 −102.7、
+> pr20 −138.4）与参数敏感性见同文档 §5 / §4。
+
+## 复现口径（重要）
+
+- **判定主口径 = 固定迭代（6000 次）**；时间预算（600 s）为辅口径 —— 后者受系统
+  负载影响迭代数，必须**串行 + 独立进程**运行。
+- **判定门槛**：臂间配对差须大于同臂跨 seed 散布；关键判定 ≥ 3 seeds（主判别为
+  10 seeds 配对）。
+- **预注册 → 跑批 → 判定**：每个实验先写判据死值的预注册文档，跑完出判定文档，
+  两者都在 `docs/`（`*-prereg-*.md` / `*-verdict-*.md`）。未通过判定的机制探针
+  （负结论）同样保留在仓库与文档链中。
+- 结果 JSON 字段：`instance / seed / arm / iterations / wall_s / best_feasible_cost /
+  vehicles / tw_violations / served / archive_* / probe_stats / population_stats`。
+
+## 引用
+
+算例来自 Cordeau, Laporte & Mercier (2001), *A unified tabu search heuristic for
+vehicle routing problems with time windows*, JORS 52(8):928–936（VRP-REP 数据集
+2017-0012）。现代参照值来源与核对记录见 `docs/mdvrptw-bks-2026.md` 与
+`docs/bks-verification.md`。
