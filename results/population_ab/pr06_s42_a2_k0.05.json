@@ -1,0 +1,17 @@
+{
+ "instance": "pr06",
+ "seed": 42,
+ "arm": "a2",
+ "arm_tag": "a2_k0.05",
+ "iterations": 6000,
+ "wall_s": 333.3,
+ "best_feasible_cost": 3668.5224,
+ "vehicles": 24,
+ "tw_violations": 0,
+ "served": 288,
+ "num_customers": 288,
+ "archive_entries": 20,
+ "archive_distinct_routes": 129,
+ "archive_mean_jaccard": 0.2902,
+ "cx_iterations": 0
+}

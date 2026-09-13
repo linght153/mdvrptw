@@ -1,0 +1,202 @@
+{
+ "pr01": {
+  "customers": 48,
+  "depots": 4,
+  "vehicles_per_depot": 2,
+  "res_1997": 1083.98,
+  "bks_lit": 1074.12,
+  "mdfiha_fbest": 1074.12,
+  "reference": 1074.12,
+  "source": "arXiv 2605.05208 (2026-05)"
+ },
+ "pr02": {
+  "customers": 96,
+  "depots": 4,
+  "vehicles_per_depot": 3,
+  "res_1997": 1763.07,
+  "bks_lit": 1762.21,
+  "mdfiha_fbest": 1762.21,
+  "reference": 1762.21,
+  "source": "arXiv 2605.05208 (2026-05)"
+ },
+ "pr03": {
+  "customers": 144,
+  "depots": 4,
+  "vehicles_per_depot": 4,
+  "res_1997": 2408.42,
+  "bks_lit": 2373.65,
+  "mdfiha_fbest": 2373.65,
+  "reference": 2373.65,
+  "source": "arXiv 2605.05208 (2026-05)"
+ },
+ "pr04": {
+  "customers": 192,
+  "depots": 4,
+  "vehicles_per_depot": 5,
+  "res_1997": 2958.23,
+  "bks_lit": 2814.34,
+  "mdfiha_fbest": 2814.34,
+  "reference": 2814.34,
+  "source": "arXiv 2605.05208 (2026-05)"
+ },
+ "pr05": {
+  "customers": 240,
+  "depots": 4,
+  "vehicles_per_depot": 6,
+  "res_1997": 3134.04,
+  "bks_lit": 2964.65,
+  "mdfiha_fbest": 2962.25,
+  "reference": 2962.25,
+  "source": "arXiv 2605.05208 (2026-05)"
+ },
+ "pr06": {
+  "customers": 288,
+  "depots": 4,
+  "vehicles_per_depot": 7,
+  "res_1997": null,
+  "bks_lit": 3588.78,
+  "mdfiha_fbest": 3588.78,
+  "reference": 3588.78,
+  "source": "arXiv 2605.05208 (2026-05)"
+ },
+ "pr07": {
+  "customers": 72,
+  "depots": 6,
+  "vehicles_per_depot": 2,
+  "res_1997": null,
+  "bks_lit": 1418.22,
+  "mdfiha_fbest": 1418.22,
+  "reference": 1418.22,
+  "source": "arXiv 2605.05208 (2026-05)"
+ },
+ "pr08": {
+  "customers": 144,
+  "depots": 6,
+  "vehicles_per_depot": 3,
+  "res_1997": null,
+  "bks_lit": 2096.73,
+  "mdfiha_fbest": 2096.73,
+  "reference": 2096.73,
+  "source": "arXiv 2605.05208 (2026-05)"
+ },
+ "pr09": {
+  "customers": 216,
+  "depots": 6,
+  "vehicles_per_depot": 4,
+  "res_1997": null,
+  "bks_lit": 2712.56,
+  "mdfiha_fbest": 2712.56,
+  "reference": 2712.56,
+  "source": "arXiv 2605.05208 (2026-05)"
+ },
+ "pr10": {
+  "customers": 288,
+  "depots": 6,
+  "vehicles_per_depot": 5,
+  "res_1997": null,
+  "bks_lit": 3465.92,
+  "mdfiha_fbest": 3465.54,
+  "reference": 3465.54,
+  "source": "arXiv 2605.05208 (2026-05)"
+ },
+ "pr11": {
+  "customers": 48,
+  "depots": 4,
+  "vehicles_per_depot": 1,
+  "res_1997": null,
+  "bks_lit": 1005.73,
+  "mdfiha_fbest": 1005.73,
+  "reference": 1005.73,
+  "source": "arXiv 2605.05208 (2026-05)"
+ },
+ "pr12": {
+  "customers": 96,
+  "depots": 4,
+  "vehicles_per_depot": 2,
+  "res_1997": null,
+  "bks_lit": 1464.5,
+  "mdfiha_fbest": 1464.5,
+  "reference": 1464.5,
+  "source": "arXiv 2605.05208 (2026-05)"
+ },
+ "pr13": {
+  "customers": 144,
+  "depots": 4,
+  "vehicles_per_depot": 3,
+  "res_1997": null,
+  "bks_lit": 2001.81,
+  "mdfiha_fbest": 2001.81,
+  "reference": 2001.81,
+  "source": "arXiv 2605.05208 (2026-05)"
+ },
+ "pr14": {
+  "customers": 192,
+  "depots": 4,
+  "vehicles_per_depot": 4,
+  "res_1997": null,
+  "bks_lit": 2195.33,
+  "mdfiha_fbest": 2195.33,
+  "reference": 2195.33,
+  "source": "arXiv 2605.05208 (2026-05)"
+ },
+ "pr15": {
+  "customers": 240,
+  "depots": 4,
+  "vehicles_per_depot": 5,
+  "res_1997": null,
+  "bks_lit": 2433.15,
+  "mdfiha_fbest": 2433.15,
+  "reference": 2433.15,
+  "source": "arXiv 2605.05208 (2026-05)"
+ },
+ "pr16": {
+  "customers": 288,
+  "depots": 4,
+  "vehicles_per_depot": 6,
+  "res_1997": null,
+  "bks_lit": 2836.67,
+  "mdfiha_fbest": 2836.67,
+  "reference": 2836.67,
+  "source": "arXiv 2605.05208 (2026-05)"
+ },
+ "pr17": {
+  "customers": 72,
+  "depots": 6,
+  "vehicles_per_depot": 1,
+  "res_1997": null,
+  "bks_lit": 1236.24,
+  "mdfiha_fbest": 1236.24,
+  "reference": 1236.24,
+  "source": "arXiv 2605.05208 (2026-05)"
+ },
+ "pr18": {
+  "customers": 144,
+  "depots": 6,
+  "vehicles_per_depot": 2,
+  "res_1997": null,
+  "bks_lit": 1788.18,
+  "mdfiha_fbest": 1788.18,
+  "reference": 1788.18,
+  "source": "arXiv 2605.05208 (2026-05)"
+ },
+ "pr19": {
+  "customers": 216,
+  "depots": 6,
+  "vehicles_per_depot": 3,
+  "res_1997": null,
+  "bks_lit": 2261.08,
+  "mdfiha_fbest": 2257.13,
+  "reference": 2257.13,
+  "source": "arXiv 2605.05208 (2026-05)"
+ },
+ "pr20": {
+  "customers": 288,
+  "depots": 6,
+  "vehicles_per_depot": 4,
+  "res_1997": null,
+  "bks_lit": 2993.31,
+  "mdfiha_fbest": 2983.78,
+  "reference": 2983.78,
+  "source": "arXiv 2605.05208 (2026-05)"
+ }
+}

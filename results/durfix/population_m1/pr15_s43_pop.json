@@ -1,0 +1,44 @@
+{
+ "instance": "pr15",
+ "seed": 43,
+ "arm": "pop",
+ "arm_tag": "pop",
+ "iterations": 6000,
+ "wall_s": 700.8,
+ "best_feasible_cost": 2726.5077,
+ "vehicles": 20,
+ "tw_violations": 0,
+ "served": 240,
+ "num_customers": 240,
+ "archive_entries": 20,
+ "archive_distinct_routes": 65,
+ "archive_mean_jaccard": 0.5694,
+ "cx_iterations": 0,
+ "probe_stats": {
+  "adds": 364,
+  "accepts": 479,
+  "equal_accepts": 109,
+  "restarts": 0,
+  "stagnation_peak": 183
+ },
+ "population_stats": {
+  "init_members": 8,
+  "refresh_events": 0,
+  "member_refresh_events": 139,
+  "member_advances": {
+   "0": 47,
+   "1": 61,
+   "2": 55,
+   "3": 53,
+   "4": 66,
+   "5": 70,
+   "6": 72,
+   "7": 42
+  },
+  "dc_min_mean": 0.25599738910683756
+ },
+ "pool_final_spread": 0.0,
+ "pool_feasible_members": 8,
+ "max_route_duration_excess": 0.0,
+ "max_return_time": 564.758
+}

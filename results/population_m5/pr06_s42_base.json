@@ -1,0 +1,31 @@
+{
+ "instance": "pr06",
+ "seed": 42,
+ "arm": "base",
+ "arm_tag": "base",
+ "mode": "6000",
+ "budget_s": null,
+ "iterations": 6000,
+ "wall_s": 610.5,
+ "best_feasible_cost": 3601.7952,
+ "vehicles": 24,
+ "tw_violations": 0,
+ "served": 288,
+ "num_customers": 288,
+ "archive_entries": 20,
+ "archive_distinct_routes": 62,
+ "archive_mean_jaccard": 0.6566,
+ "probe_stats": {
+  "adds": 403,
+  "accepts": 993,
+  "equal_accepts": 210,
+  "restarts": 0,
+  "stagnation_peak": 150
+ },
+ "population_stats": null,
+ "pool_final_spread": null,
+ "pool_feasible_members": null,
+ "best_mismatch_penalty": 339.6,
+ "best_n_mismatch": 21,
+ "best_geo_consistent_frac": 0.9271
+}

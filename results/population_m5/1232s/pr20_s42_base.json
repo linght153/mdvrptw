@@ -1,0 +1,31 @@
+{
+ "instance": "pr20",
+ "seed": 42,
+ "arm": "base",
+ "arm_tag": "base",
+ "mode": "1232",
+ "budget_s": null,
+ "iterations": 11078,
+ "wall_s": 1232.0,
+ "best_feasible_cost": 3177.2314,
+ "vehicles": 24,
+ "tw_violations": 0,
+ "served": 288,
+ "num_customers": 288,
+ "archive_entries": 20,
+ "archive_distinct_routes": 56,
+ "archive_mean_jaccard": 0.6082,
+ "probe_stats": {
+  "adds": 476,
+  "accepts": 6157,
+  "equal_accepts": 15,
+  "restarts": 0,
+  "stagnation_peak": 622
+ },
+ "population_stats": null,
+ "pool_final_spread": null,
+ "pool_feasible_members": null,
+ "best_mismatch_penalty": 1485.8,
+ "best_n_mismatch": 63,
+ "best_geo_consistent_frac": 0.7812
+}

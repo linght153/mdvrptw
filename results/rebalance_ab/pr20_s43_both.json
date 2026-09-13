@@ -1,0 +1,1 @@
+{"instance": "pr20", "seed": 43, "arm": "both", "mode": "6000iter", "budget_s": null, "best_cost": 3218.6726269779633, "wall_s": 300.4, "iterations": null, "mismatch_penalty": 1654.867, "geo_consistent_frac": 0.75, "n_mismatch": 72}

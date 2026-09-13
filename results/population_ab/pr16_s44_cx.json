@@ -1,0 +1,16 @@
+{
+ "instance": "pr16",
+ "seed": 44,
+ "arm": "cx",
+ "iterations": 6000,
+ "wall_s": 275.0,
+ "best_feasible_cost": 2958.5283,
+ "vehicles": 23,
+ "tw_violations": 0,
+ "served": 288,
+ "num_customers": 288,
+ "archive_entries": 20,
+ "archive_distinct_routes": 91,
+ "archive_mean_jaccard": 0.4427,
+ "cx_iterations": 1268
+}

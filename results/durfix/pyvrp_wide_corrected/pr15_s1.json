@@ -1,0 +1,12 @@
+{
+ "instance": "pr15",
+ "seed": 1,
+ "raw_cost": 2441.3493,
+ "repaired_cost": 2927.3826,
+ "repaired_flag": true,
+ "std_cost_polished": 2522.8638,
+ "feasible_final": true,
+ "recorded_std_cost": 2927.3826,
+ "reproduce_ok": true,
+ "d_col_violations_raw": 5
+}

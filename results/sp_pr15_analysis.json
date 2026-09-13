@@ -1,0 +1,18 @@
+{
+ "instance": "pr15",
+ "best_cost": 2530.1837854010237,
+ "sp_obj": 2530.183784,
+ "gain_pp": 5.537241387255339e-08,
+ "pool": {
+  "total_route_occurrences": 400,
+  "distinct_columns": 81,
+  "num_solutions": 20,
+  "mean_jaccard_solutions": 0.47257802113848474
+ },
+ "solver": {
+  "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+  "solve_s": 0.0,
+  "mip_gap": 0.0,
+  "n_cols": 81
+ }
+}

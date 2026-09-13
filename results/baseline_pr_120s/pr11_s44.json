@@ -1,0 +1,13 @@
+{
+ "instance": "pr11",
+ "seed": 44,
+ "budget_s": 120.0,
+ "wall_s": 120.1,
+ "best_feasible_cost": 1024.4038,
+ "vehicles": 4,
+ "tw_violations": 0,
+ "served": 48,
+ "num_customers": 48,
+ "archive_entries": 2,
+ "iterations": 2987
+}

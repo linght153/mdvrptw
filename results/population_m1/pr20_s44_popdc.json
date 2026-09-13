@@ -1,0 +1,42 @@
+{
+ "instance": "pr20",
+ "seed": 44,
+ "arm": "popdc",
+ "arm_tag": "popdc",
+ "iterations": 6000,
+ "wall_s": 387.2,
+ "best_feasible_cost": 3235.3271,
+ "vehicles": 24,
+ "tw_violations": 0,
+ "served": 288,
+ "num_customers": 288,
+ "archive_entries": 20,
+ "archive_distinct_routes": 68,
+ "archive_mean_jaccard": 0.6021,
+ "cx_iterations": 0,
+ "probe_stats": {
+  "adds": 379,
+  "accepts": 563,
+  "equal_accepts": 147,
+  "restarts": 0,
+  "stagnation_peak": 163
+ },
+ "population_stats": {
+  "init_members": 8,
+  "refresh_events": 0,
+  "member_refresh_events": 110,
+  "member_advances": {
+   "0": 111,
+   "1": 67,
+   "2": 68,
+   "3": 51,
+   "4": 50,
+   "5": 77,
+   "6": 76,
+   "7": 34
+  },
+  "dc_min_mean": 0.4675995880476668
+ },
+ "pool_final_spread": 0.3298,
+ "pool_feasible_members": 8
+}

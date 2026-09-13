@@ -1,0 +1,44 @@
+{
+  "cordeau": {
+    "description": "Cordeau MDVRP benchmark instances converted to Green MDVRP format",
+    "source": "Cordeau et al. (1999) via fboliveira/MDVRP-Instances",
+    "instances": [
+      "p01",
+      "p02",
+      "p03",
+      "p04",
+      "p05",
+      "p07",
+      "p12",
+      "p15",
+      "p18",
+      "p20",
+      "p22",
+      "p23"
+    ],
+    "emission_model": {
+      "base_emission_rate": 0.155,
+      "load_correction_alpha": 0.3,
+      "unit_cost": 1.0
+    }
+  },
+  "zhang_gajpal": {
+    "description": "Zhang & Gajpal (2020) style Green MDVRP instances",
+    "source": "Generated following Zhang et al. (2020) Sustainability 12(8):3500",
+    "instances": [
+      "zg_s01",
+      "zg_s02",
+      "zg_s03",
+      "zg_m01",
+      "zg_m02",
+      "zg_m03",
+      "zg_l01",
+      "zg_l02"
+    ],
+    "emission_model": {
+      "base_emission_rate": 0.155,
+      "load_correction_alpha": 0.3,
+      "unit_cost": 1.0
+    }
+  }
+}

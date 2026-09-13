@@ -1,0 +1,165 @@
+{
+ "source": "VRP-REP 2017-0012 Cordeau et al. (2001) MDVRPTW",
+ "instances": [
+  {
+   "name": "pr01",
+   "file": "pr01.txt",
+   "type": 6,
+   "vehicles_per_depot": 2,
+   "customers": 48,
+   "depots": 4
+  },
+  {
+   "name": "pr02",
+   "file": "pr02.txt",
+   "type": 6,
+   "vehicles_per_depot": 3,
+   "customers": 96,
+   "depots": 4
+  },
+  {
+   "name": "pr03",
+   "file": "pr03.txt",
+   "type": 6,
+   "vehicles_per_depot": 4,
+   "customers": 144,
+   "depots": 4
+  },
+  {
+   "name": "pr04",
+   "file": "pr04.txt",
+   "type": 6,
+   "vehicles_per_depot": 5,
+   "customers": 192,
+   "depots": 4
+  },
+  {
+   "name": "pr05",
+   "file": "pr05.txt",
+   "type": 6,
+   "vehicles_per_depot": 6,
+   "customers": 240,
+   "depots": 4
+  },
+  {
+   "name": "pr06",
+   "file": "pr06.txt",
+   "type": 6,
+   "vehicles_per_depot": 7,
+   "customers": 288,
+   "depots": 4
+  },
+  {
+   "name": "pr07",
+   "file": "pr07.txt",
+   "type": 6,
+   "vehicles_per_depot": 2,
+   "customers": 72,
+   "depots": 6
+  },
+  {
+   "name": "pr08",
+   "file": "pr08.txt",
+   "type": 6,
+   "vehicles_per_depot": 3,
+   "customers": 144,
+   "depots": 6
+  },
+  {
+   "name": "pr09",
+   "file": "pr09.txt",
+   "type": 6,
+   "vehicles_per_depot": 4,
+   "customers": 216,
+   "depots": 6
+  },
+  {
+   "name": "pr10",
+   "file": "pr10.txt",
+   "type": 6,
+   "vehicles_per_depot": 5,
+   "customers": 288,
+   "depots": 6
+  },
+  {
+   "name": "pr11",
+   "file": "pr11.txt",
+   "type": 6,
+   "vehicles_per_depot": 1,
+   "customers": 48,
+   "depots": 4
+  },
+  {
+   "name": "pr12",
+   "file": "pr12.txt",
+   "type": 6,
+   "vehicles_per_depot": 2,
+   "customers": 96,
+   "depots": 4
+  },
+  {
+   "name": "pr13",
+   "file": "pr13.txt",
+   "type": 6,
+   "vehicles_per_depot": 3,
+   "customers": 144,
+   "depots": 4
+  },
+  {
+   "name": "pr14",
+   "file": "pr14.txt",
+   "type": 6,
+   "vehicles_per_depot": 4,
+   "customers": 192,
+   "depots": 4
+  },
+  {
+   "name": "pr15",
+   "file": "pr15.txt",
+   "type": 6,
+   "vehicles_per_depot": 5,
+   "customers": 240,
+   "depots": 4
+  },
+  {
+   "name": "pr16",
+   "file": "pr16.txt",
+   "type": 6,
+   "vehicles_per_depot": 6,
+   "customers": 288,
+   "depots": 4
+  },
+  {
+   "name": "pr17",
+   "file": "pr17.txt",
+   "type": 6,
+   "vehicles_per_depot": 1,
+   "customers": 72,
+   "depots": 6
+  },
+  {
+   "name": "pr18",
+   "file": "pr18.txt",
+   "type": 6,
+   "vehicles_per_depot": 2,
+   "customers": 144,
+   "depots": 6
+  },
+  {
+   "name": "pr19",
+   "file": "pr19.txt",
+   "type": 6,
+   "vehicles_per_depot": 3,
+   "customers": 216,
+   "depots": 6
+  },
+  {
+   "name": "pr20",
+   "file": "pr20.txt",
+   "type": 6,
+   "vehicles_per_depot": 4,
+   "customers": 288,
+   "depots": 6
+  }
+ ]
+}

@@ -1,0 +1,42 @@
+{
+ "instance": "pr16",
+ "seed": 44,
+ "arm": "pop",
+ "arm_tag": "pop",
+ "iterations": 6000,
+ "wall_s": 593.9,
+ "best_feasible_cost": 2944.1688,
+ "vehicles": 24,
+ "tw_violations": 0,
+ "served": 288,
+ "num_customers": 288,
+ "archive_entries": 20,
+ "archive_distinct_routes": 64,
+ "archive_mean_jaccard": 0.6256,
+ "cx_iterations": 0,
+ "probe_stats": {
+  "adds": 376,
+  "accepts": 1041,
+  "equal_accepts": 483,
+  "restarts": 0,
+  "stagnation_peak": 243
+ },
+ "population_stats": {
+  "init_members": 8,
+  "refresh_events": 0,
+  "member_refresh_events": 71,
+  "member_advances": {
+   "0": 158,
+   "1": 141,
+   "2": 130,
+   "3": 132,
+   "4": 115,
+   "5": 139,
+   "6": 119,
+   "7": 107
+  },
+  "dc_min_mean": 0.3257146853856532
+ },
+ "pool_final_spread": 0.0986,
+ "pool_feasible_members": 8
+}

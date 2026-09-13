@@ -1,0 +1,49 @@
+{
+ "instance": "pr15",
+ "seed": 42,
+ "arm": "popcx_part",
+ "arm_tag": "popcx_part",
+ "iterations": 6000,
+ "wall_s": 254.3,
+ "best_feasible_cost": 2545.2888,
+ "vehicles": 20,
+ "tw_violations": 0,
+ "served": 240,
+ "num_customers": 240,
+ "archive_entries": 20,
+ "archive_distinct_routes": 52,
+ "archive_mean_jaccard": 0.6735,
+ "cx_iterations": 0,
+ "probe_stats": {
+  "adds": 423,
+  "accepts": 1087,
+  "equal_accepts": 458,
+  "restarts": 0,
+  "stagnation_peak": 185
+ },
+ "population_stats": {
+  "init_members": 8,
+  "refresh_events": 0,
+  "member_refresh_events": 51,
+  "member_advances": {
+   "0": 188,
+   "1": 156,
+   "2": 156,
+   "3": 156,
+   "4": 115,
+   "5": 121,
+   "6": 86,
+   "7": 104
+  },
+  "dc_min_mean": 0.26308148667431447,
+  "cx_attempts": 1131,
+  "cx_children": 1131,
+  "cx_duplicates": 4388,
+  "cx_novel_route_keys": 2198
+ },
+ "pool_final_spread": 0.1118,
+ "pool_feasible_members": 8,
+ "best_mismatch_penalty": 713.6,
+ "best_n_mismatch": 41,
+ "best_geo_consistent_frac": 0.8292
+}

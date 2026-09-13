@@ -1,0 +1,14 @@
+{
+ "instance": "pr20",
+ "seed": 43,
+ "budget_s": 120.0,
+ "wall_s": 120.4,
+ "best_feasible_cost": 3426.6998,
+ "vehicles": 24,
+ "tw_violations": 0,
+ "served": 288,
+ "num_customers": 288,
+ "archive_entries": 20,
+ "iterations": 1583,
+ "mode": "prune"
+}

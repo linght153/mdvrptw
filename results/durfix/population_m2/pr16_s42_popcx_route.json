@@ -1,0 +1,51 @@
+{
+ "instance": "pr16",
+ "seed": 42,
+ "arm": "popcx_route",
+ "arm_tag": "popcx_route",
+ "iterations": 6000,
+ "wall_s": 951.2,
+ "best_feasible_cost": 3131.3657,
+ "vehicles": 23,
+ "tw_violations": 0,
+ "served": 288,
+ "num_customers": 288,
+ "archive_entries": 20,
+ "archive_distinct_routes": 64,
+ "archive_mean_jaccard": 0.5744,
+ "cx_iterations": 0,
+ "probe_stats": {
+  "adds": 268,
+  "accepts": 349,
+  "equal_accepts": 73,
+  "restarts": 0,
+  "stagnation_peak": 299
+ },
+ "population_stats": {
+  "init_members": 8,
+  "refresh_events": 0,
+  "member_refresh_events": 151,
+  "member_advances": {
+   "0": 53,
+   "1": 43,
+   "2": 38,
+   "3": 64,
+   "4": 41,
+   "5": 30,
+   "6": 33,
+   "7": 38
+  },
+  "dc_min_mean": 0.21630425815917237,
+  "cx_attempts": 833,
+  "cx_children": 833,
+  "cx_duplicates": 0,
+  "cx_novel_route_keys": 12050
+ },
+ "pool_final_spread": 0.0,
+ "pool_feasible_members": 8,
+ "best_mismatch_penalty": 1093.9,
+ "best_n_mismatch": 29,
+ "best_geo_consistent_frac": 0.8993,
+ "max_route_duration_excess": 0.0,
+ "max_return_time": 538.8991
+}

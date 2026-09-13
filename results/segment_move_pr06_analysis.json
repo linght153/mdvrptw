@@ -1,0 +1,97 @@
+{
+ "instance": "pr06",
+ "best_cost": 3629.9634263379558,
+ "gap_bks_pct": 1.147560628903288,
+ "wall_s": 0.3191566467285156,
+ "seg_relocate": {
+  "total": 272320,
+  "cap_pass": 51273,
+  "improve": 71,
+  "tw_ok": 0,
+  "tw_checked": 71,
+  "per_len": {
+   "2": {
+    "improve": 48,
+    "tw_ok": 0
+   },
+   "3": {
+    "improve": 16,
+    "tw_ok": 0
+   },
+   "4": {
+    "improve": 4,
+    "tw_ok": 0
+   },
+   "5": {
+    "improve": 3,
+    "tw_ok": 0
+   }
+  },
+  "imp_gains": {
+   "n": 0,
+   "min": null,
+   "max": null
+  },
+  "a_side_assert": 100
+ },
+ "seg_exchange": {
+  "total": 121532,
+  "cap_pass": 73438,
+  "improve": 25,
+  "tw_ok": 0,
+  "tw_checked": 25,
+  "per_len": {
+   "2x2": {
+    "improve": 9,
+    "tw_ok": 0
+   },
+   "2x3": {
+    "improve": 4,
+    "tw_ok": 0
+   },
+   "3x2": {
+    "improve": 10,
+    "tw_ok": 0
+   },
+   "3x3": {
+    "improve": 2,
+    "tw_ok": 0
+   }
+  },
+  "imp_gains": {
+   "n": 0,
+   "min": null,
+   "max": null
+  }
+ },
+ "or_opt": {
+  "total": 8240,
+  "cap_pass": 8240,
+  "improve": 65,
+  "tw_ok": 0,
+  "tw_checked": 65,
+  "per_len": {
+   "2": {
+    "improve": 26,
+    "tw_ok": 0
+   },
+   "3": {
+    "improve": 17,
+    "tw_ok": 0
+   },
+   "4": {
+    "improve": 7,
+    "tw_ok": 0
+   },
+   "5": {
+    "improve": 15,
+    "tw_ok": 0
+   }
+  },
+  "imp_gains": {
+   "n": 0,
+   "min": null,
+   "max": null
+  }
+ }
+}

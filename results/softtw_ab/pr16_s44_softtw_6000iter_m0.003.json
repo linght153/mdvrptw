@@ -1,0 +1,1 @@
+{"instance": "pr16", "seed": 44, "arm": "softtw", "best_cost": 2959.970568202186, "wall_s": 385.9, "iterations": 6000, "soft_tw_stats": {"violation_iters": 37, "repair_events": 60, "repair_feasible": 60, "seed_adopted": 0, "lam": 0.056549809977489644}}

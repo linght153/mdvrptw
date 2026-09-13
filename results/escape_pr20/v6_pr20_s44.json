@@ -1,0 +1,9 @@
+{
+ "instance": "pr20",
+ "seed": 44,
+ "variant": "v6",
+ "best_feasible_cost": 3513.475466932029,
+ "wall_s": 120.03,
+ "iterations": 1727,
+ "archive_entries": 20
+}

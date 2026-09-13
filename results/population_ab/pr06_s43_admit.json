@@ -1,0 +1,425 @@
+{
+ "instance": "pr06",
+ "seed": 43,
+ "arm": "admit",
+ "arm_tag": "admit",
+ "iterations": 6000,
+ "wall_s": 428.8,
+ "best_feasible_cost": 3575.9573,
+ "vehicles": 26,
+ "tw_violations": 0,
+ "served": 288,
+ "num_customers": 288,
+ "archive_entries": 20,
+ "archive_distinct_routes": 62,
+ "archive_mean_jaccard": 0.7371,
+ "cx_iterations": 0,
+ "probe_stats": {
+  "adds": 5678,
+  "accepts": 943,
+  "equal_accepts": 129,
+  "restarts": 0,
+  "stagnation_peak": 3
+ },
+ "improvements": [
+  {
+   "iter": 1,
+   "destroy": "depot_focused",
+   "repair": "greedy_cost_tw",
+   "cost": 6578.3453
+  },
+  {
+   "iter": 2,
+   "destroy": "route",
+   "repair": "greedy_cost_tw",
+   "cost": 6263.1167
+  },
+  {
+   "iter": 4,
+   "destroy": "worst_cost",
+   "repair": "greedy_cost_tw",
+   "cost": 5189.9933
+  },
+  {
+   "iter": 8,
+   "destroy": "worst_combined",
+   "repair": "greedy_cost_tw",
+   "cost": 4889.8136
+  },
+  {
+   "iter": 22,
+   "destroy": "worst_combined",
+   "repair": "greedy_cost_tw",
+   "cost": 4620.5088
+  },
+  {
+   "iter": 24,
+   "destroy": "worst_cost",
+   "repair": "greedy_cost_tw",
+   "cost": 4495.2916
+  },
+  {
+   "iter": 25,
+   "destroy": "worst_cost",
+   "repair": "greedy_cost_tw",
+   "cost": 4457.6372
+  },
+  {
+   "iter": 27,
+   "destroy": "worst_combined",
+   "repair": "greedy_cost_tw",
+   "cost": 4317.7907
+  },
+  {
+   "iter": 31,
+   "destroy": "route",
+   "repair": "greedy_cost_tw",
+   "cost": 4307.0072
+  },
+  {
+   "iter": 32,
+   "destroy": "worst_emission",
+   "repair": "greedy_cost_tw",
+   "cost": 4298.9851
+  },
+  {
+   "iter": 34,
+   "destroy": "shaw",
+   "repair": "greedy_cost_tw",
+   "cost": 4235.1592
+  },
+  {
+   "iter": 35,
+   "destroy": "worst_cost",
+   "repair": "greedy_cost_tw",
+   "cost": 4151.5492
+  },
+  {
+   "iter": 37,
+   "destroy": "route",
+   "repair": "greedy_cost_tw",
+   "cost": 4044.735
+  },
+  {
+   "iter": 41,
+   "destroy": "worst_emission",
+   "repair": "greedy_cost_tw",
+   "cost": 4014.5302
+  },
+  {
+   "iter": 43,
+   "destroy": "depot_focused",
+   "repair": "greedy_cost_tw",
+   "cost": 3956.4005
+  },
+  {
+   "iter": 55,
+   "destroy": "worst_emission",
+   "repair": "greedy_cost_tw",
+   "cost": 3906.9487
+  },
+  {
+   "iter": 58,
+   "destroy": "depot_focused",
+   "repair": "greedy_cost_tw",
+   "cost": 3848.0186
+  },
+  {
+   "iter": 61,
+   "destroy": "worst_combined",
+   "repair": "greedy_cost_tw",
+   "cost": 3803.053
+  },
+  {
+   "iter": 64,
+   "destroy": "depot_focused",
+   "repair": "greedy_cost_tw",
+   "cost": 3762.6107
+  },
+  {
+   "iter": 88,
+   "destroy": "random",
+   "repair": "greedy_cost_tw",
+   "cost": 3759.0414
+  },
+  {
+   "iter": 147,
+   "destroy": "random",
+   "repair": "greedy_cost_tw",
+   "cost": 3743.3888
+  },
+  {
+   "iter": 172,
+   "destroy": "random",
+   "repair": "greedy_cost_tw",
+   "cost": 3727.1448
+  },
+  {
+   "iter": 178,
+   "destroy": "worst_combined",
+   "repair": "greedy_cost_tw",
+   "cost": 3716.3078
+  },
+  {
+   "iter": 203,
+   "destroy": "worst_cost",
+   "repair": "greedy_cost_tw",
+   "cost": 3716.0284
+  },
+  {
+   "iter": 249,
+   "destroy": "worst_emission",
+   "repair": "greedy_cost_tw",
+   "cost": 3700.0421
+  },
+  {
+   "iter": 390,
+   "destroy": "worst_emission",
+   "repair": "greedy_cost_tw",
+   "cost": 3692.5352
+  },
+  {
+   "iter": 436,
+   "destroy": "random",
+   "repair": "greedy_cost_tw",
+   "cost": 3689.4011
+  },
+  {
+   "iter": 445,
+   "destroy": "random",
+   "repair": "greedy_cost_tw",
+   "cost": 3687.7838
+  },
+  {
+   "iter": 469,
+   "destroy": "worst_emission",
+   "repair": "greedy_cost_tw",
+   "cost": 3686.3517
+  },
+  {
+   "iter": 480,
+   "destroy": "worst_combined",
+   "repair": "greedy_cost_tw",
+   "cost": 3681.5317
+  },
+  {
+   "iter": 483,
+   "destroy": "worst_emission",
+   "repair": "greedy_cost_tw",
+   "cost": 3679.6538
+  },
+  {
+   "iter": 491,
+   "destroy": "worst_combined",
+   "repair": "greedy_cost_tw",
+   "cost": 3679.3744
+  },
+  {
+   "iter": 492,
+   "destroy": "worst_combined",
+   "repair": "greedy_cost_tw",
+   "cost": 3672.4997
+  },
+  {
+   "iter": 498,
+   "destroy": "worst_combined",
+   "repair": "greedy_cost_tw",
+   "cost": 3672.2203
+  },
+  {
+   "iter": 552,
+   "destroy": "random",
+   "repair": "greedy_cost_tw",
+   "cost": 3669.7653
+  },
+  {
+   "iter": 584,
+   "destroy": "worst_emission",
+   "repair": "greedy_cost_tw",
+   "cost": 3664.4459
+  },
+  {
+   "iter": 676,
+   "destroy": "shaw",
+   "repair": "greedy_cost_tw",
+   "cost": 3663.6245
+  },
+  {
+   "iter": 679,
+   "destroy": "random",
+   "repair": "greedy_cost_tw",
+   "cost": 3656.4477
+  },
+  {
+   "iter": 692,
+   "destroy": "random",
+   "repair": "greedy_cost_tw",
+   "cost": 3655.2908
+  },
+  {
+   "iter": 874,
+   "destroy": "worst_emission",
+   "repair": "greedy_cost_tw",
+   "cost": 3625.929
+  },
+  {
+   "iter": 892,
+   "destroy": "worst_emission",
+   "repair": "greedy_cost_tw",
+   "cost": 3618.8576
+  },
+  {
+   "iter": 924,
+   "destroy": "random",
+   "repair": "greedy_cost_tw",
+   "cost": 3618.8394
+  },
+  {
+   "iter": 999,
+   "destroy": "worst_emission",
+   "repair": "greedy_cost_tw",
+   "cost": 3614.5112
+  },
+  {
+   "iter": 1004,
+   "destroy": "worst_emission",
+   "repair": "greedy_cost_tw",
+   "cost": 3609.1446
+  },
+  {
+   "iter": 1022,
+   "destroy": "random",
+   "repair": "greedy_cost_tw",
+   "cost": 3606.1275
+  },
+  {
+   "iter": 1110,
+   "destroy": "worst_emission",
+   "repair": "greedy_cost_tw",
+   "cost": 3605.5332
+  },
+  {
+   "iter": 1148,
+   "destroy": "depot_focused",
+   "repair": "greedy_cost_tw",
+   "cost": 3603.288
+  },
+  {
+   "iter": 1149,
+   "destroy": "worst_emission",
+   "repair": "greedy_cost_tw",
+   "cost": 3599.9003
+  },
+  {
+   "iter": 1188,
+   "destroy": "worst_combined",
+   "repair": "greedy_cost_tw",
+   "cost": 3599.526
+  },
+  {
+   "iter": 1236,
+   "destroy": "worst_emission",
+   "repair": "greedy_cost_tw",
+   "cost": 3599.3091
+  },
+  {
+   "iter": 1869,
+   "destroy": "random",
+   "repair": "greedy_cost_tw",
+   "cost": 3598.6594
+  },
+  {
+   "iter": 2050,
+   "destroy": "worst_emission",
+   "repair": "greedy_cost_tw",
+   "cost": 3596.2044
+  },
+  {
+   "iter": 2150,
+   "destroy": "random",
+   "repair": "greedy_cost_tw",
+   "cost": 3595.4702
+  },
+  {
+   "iter": 2163,
+   "destroy": "worst_emission",
+   "repair": "greedy_cost_tw",
+   "cost": 3594.741
+  },
+  {
+   "iter": 2175,
+   "destroy": "random",
+   "repair": "greedy_cost_tw",
+   "cost": 3590.4731
+  },
+  {
+   "iter": 2250,
+   "destroy": "random",
+   "repair": "greedy_cost_tw",
+   "cost": 3584.1755
+  },
+  {
+   "iter": 2482,
+   "destroy": "worst_emission",
+   "repair": "greedy_cost_tw",
+   "cost": 3581.7633
+  },
+  {
+   "iter": 2686,
+   "destroy": "worst_emission",
+   "repair": "greedy_cost_tw",
+   "cost": 3578.8802
+  },
+  {
+   "iter": 2728,
+   "destroy": "random",
+   "repair": "greedy_cost_tw",
+   "cost": 3578.6692
+  },
+  {
+   "iter": 2822,
+   "destroy": "random",
+   "repair": "greedy_cost_tw",
+   "cost": 3577.6583
+  },
+  {
+   "iter": 2830,
+   "destroy": "worst_emission",
+   "repair": "greedy_cost_tw",
+   "cost": 3575.9573
+  }
+ ],
+ "selector_weights": [
+  1.8407,
+  1.9946,
+  1.8096,
+  1.9948,
+  1.992,
+  1.9821,
+  1.9982,
+  1.9982,
+  1.9503
+ ],
+ "selector_usage": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "op_calls": {
+  "depot_focused": 772,
+  "greedy_cost_tw": 6000,
+  "route": 777,
+  "worst_cost": 703,
+  "worst_combined": 757,
+  "cluster": 736,
+  "shaw": 769,
+  "random": 744,
+  "worst_emission": 742
+ }
+}

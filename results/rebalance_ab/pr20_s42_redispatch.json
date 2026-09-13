@@ -1,0 +1,1 @@
+{"instance": "pr20", "seed": 42, "arm": "redispatch", "best_cost": 3307.9305368381406, "wall_s": 214.4, "iterations": null, "mismatch_penalty": 1694.289, "geo_consistent_frac": 0.8125, "n_mismatch": 54}

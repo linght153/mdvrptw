@@ -1,0 +1,62 @@
+{
+ "instance": "pr20",
+ "best_cost": 3177.8634486864103,
+ "seed2": 43,
+ "n_sols": {
+  "a": 20,
+  "b": 20
+ },
+ "L1": {
+  "sp_s42_obj": 3177.86345,
+  "sp_s42_gain_pp": 4.1335623812699396e-08,
+  "sp_merged_obj": 3177.86345,
+  "sp_merged_gain_pp": 4.1335623812699396e-08,
+  "merged_cols": 125,
+  "solver_a": {
+   "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+   "solve_s": 0.0,
+   "mip_gap": 0.0,
+   "n_cols": 59
+  },
+  "solver_m": {
+   "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+   "solve_s": 0.0,
+   "mip_gap": 0.0,
+   "n_cols": 125
+  }
+ },
+ "L2": {
+  "intra": {
+   "n": 13,
+   "infeasible_skip": 7,
+   "n_improved_after_educate": 13,
+   "gain_min_pp": 0.8884187883031469,
+   "gain_med_pp": 7.903342357333987,
+   "gain_max_pp": 18.909954901094284,
+   "best_cost_after": 3206.0961846311584,
+   "n_seq_out": 196,
+   "n_set_out": 193
+  },
+  "cross": {
+   "n": 5,
+   "infeasible_skip": 27,
+   "n_improved_after_educate": 5,
+   "gain_min_pp": 10.682004516106304,
+   "gain_med_pp": 15.62132369725866,
+   "gain_max_pp": 31.674516475092073,
+   "best_cost_after": 3517.322965790784,
+   "n_seq_out": 99,
+   "n_set_out": 99
+  },
+  "extra_cols_total": 287,
+  "sp_plus_extra_obj": 3174.574593345385,
+  "sp_plus_extra_gain_pp": -0.10349265769694638,
+  "solver_plus": {
+   "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+   "solve_s": 0.1,
+   "mip_gap": 0.0,
+   "n_cols": 412
+  }
+ },
+ "wall_s": 32.0
+}

@@ -1,0 +1,17 @@
+{
+ "instance": "pr20",
+ "budget_s": 600.0,
+ "seed": 42,
+ "wall_s": 600.0,
+ "pyvrp_int_cost": 2983,
+ "pyvrp_feasible": true,
+ "n_routes": 24,
+ "d_col_violations": 4,
+ "d_col_excess": [
+  45.8,
+  35.6,
+  32.9,
+  4.6
+ ],
+ "max_excess": 45.8
+}

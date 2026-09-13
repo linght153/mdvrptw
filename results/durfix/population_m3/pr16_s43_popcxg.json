@@ -1,0 +1,53 @@
+{
+ "instance": "pr16",
+ "seed": 43,
+ "arm": "popcxg",
+ "arm_tag": "popcxg",
+ "iterations": 6000,
+ "wall_s": 914.8,
+ "best_feasible_cost": 3074.8321,
+ "vehicles": 23,
+ "tw_violations": 0,
+ "served": 288,
+ "num_customers": 288,
+ "archive_entries": 20,
+ "archive_distinct_routes": 51,
+ "archive_mean_jaccard": 0.6961,
+ "cx_iterations": 0,
+ "probe_stats": {
+  "adds": 403,
+  "accepts": 532,
+  "equal_accepts": 92,
+  "restarts": 0,
+  "stagnation_peak": 154
+ },
+ "population_stats": {
+  "init_members": 8,
+  "refresh_events": 0,
+  "member_refresh_events": 113,
+  "member_advances": {
+   "0": 69,
+   "1": 64,
+   "2": 80,
+   "3": 97,
+   "4": 52,
+   "5": 49,
+   "6": 58,
+   "7": 49
+  },
+  "dc_min_mean": 0.2091912244931424,
+  "cx_attempts": 1107,
+  "cx_children": 1107,
+  "cx_duplicates": 2524,
+  "cx_novel_route_keys": 1669,
+  "cx_gate_success": 118,
+  "cx_gate_fail": 989
+ },
+ "pool_final_spread": 0.2465,
+ "pool_feasible_members": 8,
+ "best_mismatch_penalty": 873.6,
+ "best_n_mismatch": 35,
+ "best_geo_consistent_frac": 0.8785,
+ "max_route_duration_excess": 0.0,
+ "max_return_time": 577.1109
+}

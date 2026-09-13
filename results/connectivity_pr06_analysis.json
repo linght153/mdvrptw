@@ -1,0 +1,48 @@
+{
+ "instance": "pr06",
+ "best_cost": 3629.9634263379558,
+ "gap_bks_pct": 1.147560628903288,
+ "slack": {
+  "n_routes": 24,
+  "load_min": 103.0,
+  "load_max": 175.0,
+  "load_mean": 152.95833333333334,
+  "slack_total": 529.0,
+  "slack_min": 0.0,
+  "slack_zero_routes": 2,
+  "slack_lt_min_demand_routes": 2,
+  "fleet_total_demand": 3671.0,
+  "fleet_capacity": 4900.0,
+  "load_rate": 0.7491836734693877
+ },
+ "relocate": {
+  "total": 6624,
+  "cap_pass": 4124,
+  "improve": 107,
+  "tw_ok": 0,
+  "tw_checked": 107,
+  "cap_pass_rate": 0.6225845410628019,
+  "improve_rate_of_pass": 0.02594568380213385,
+  "tw_ok_rate_of_improve": 0.0
+ },
+ "swap": {
+  "total": 39698,
+  "cap_pass": 28648,
+  "improve": 45,
+  "tw_ok": 0,
+  "tw_checked": 45,
+  "cap_pass_rate": 0.7216484457655298,
+  "improve_rate_of_pass": 0.0015707902820441219,
+  "tw_ok_rate_of_improve": 0.0
+ },
+ "two_opt_star": {
+  "total": 33350,
+  "cap_pass": 8764,
+  "improve": 10,
+  "tw_ok": 0,
+  "tw_checked": 10,
+  "cap_pass_rate": 0.2627886056971514,
+  "improve_rate_of_pass": 0.0011410314924691922,
+  "tw_ok_rate_of_improve": 0.0
+ }
+}

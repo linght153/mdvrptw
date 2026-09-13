@@ -1,0 +1,1 @@
+{"instance": "pr15", "seed": 43, "arm": "softtw", "iters": 6000, "lambda_mult": 1.0, "best_cost": 2645.4311497794033, "wall_s": 201.2, "iterations": 6000, "soft_tw_stats": {"violation_iters": 557, "repair_events": 60, "repair_feasible": 60, "seed_adopted": 0, "lam": 19.025670501800374}}

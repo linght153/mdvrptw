@@ -1,0 +1,217 @@
+{
+ "instance": "pr20",
+ "best": 3177.8634486864103,
+ "seed2": 43,
+ "config": {
+  "n_rounds": 16,
+  "pairs_per_round": 10,
+  "k_per_pair": 2,
+  "d_window": [
+   0.35,
+   0.85
+  ]
+ },
+ "history": [
+  {
+   "round": 0,
+   "pool_cols": 125,
+   "n_new_cols": 0,
+   "sp_obj": 3177.86345,
+   "gain_pp": 4.1335623812699396e-08,
+   "n_parents": 40
+  },
+  {
+   "round": 1,
+   "pool_cols": 280,
+   "n_new_cols": 155,
+   "sp_obj": 3177.86345,
+   "gain_pp": 4.1335623812699396e-08,
+   "n_parents": 41,
+   "best_child_cost": 3287.7487081233944,
+   "sp_better": false,
+   "sp_reflux": 0,
+   "sp_status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+  },
+  {
+   "round": 2,
+   "pool_cols": 465,
+   "n_new_cols": 185,
+   "sp_obj": 3177.86345,
+   "gain_pp": 4.1335623812699396e-08,
+   "n_parents": 41,
+   "best_child_cost": 3359.6984248924964,
+   "sp_better": false,
+   "sp_reflux": 0,
+   "sp_status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+  },
+  {
+   "round": 3,
+   "pool_cols": 632,
+   "n_new_cols": 167,
+   "sp_obj": 3177.86345,
+   "gain_pp": 4.1335623812699396e-08,
+   "n_parents": 42,
+   "best_child_cost": 3227.1811262509827,
+   "sp_better": false,
+   "sp_reflux": 0,
+   "sp_status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+  },
+  {
+   "round": 4,
+   "pool_cols": 871,
+   "n_new_cols": 239,
+   "sp_obj": 3177.86345,
+   "gain_pp": 4.1335623812699396e-08,
+   "n_parents": 44,
+   "best_child_cost": 3272.468275153872,
+   "sp_better": false,
+   "sp_reflux": 0,
+   "sp_status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+  },
+  {
+   "round": 5,
+   "pool_cols": 1027,
+   "n_new_cols": 156,
+   "sp_obj": 3177.86345,
+   "gain_pp": 4.1335623812699396e-08,
+   "n_parents": 46,
+   "best_child_cost": 3298.89283193467,
+   "sp_better": false,
+   "sp_reflux": 0,
+   "sp_status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+  },
+  {
+   "round": 6,
+   "pool_cols": 1219,
+   "n_new_cols": 192,
+   "sp_obj": 3177.86345,
+   "gain_pp": 4.1335623812699396e-08,
+   "n_parents": 47,
+   "best_child_cost": 3195.579908572188,
+   "sp_better": false,
+   "sp_reflux": 0,
+   "sp_status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+  },
+  {
+   "round": 7,
+   "pool_cols": 1321,
+   "n_new_cols": 102,
+   "sp_obj": 3177.86345,
+   "gain_pp": 4.1335623812699396e-08,
+   "n_parents": 47,
+   "best_child_cost": 3364.322692479879,
+   "sp_better": false,
+   "sp_reflux": 0,
+   "sp_status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+  },
+  {
+   "round": 8,
+   "pool_cols": 1437,
+   "n_new_cols": 116,
+   "sp_obj": 3171.527037189979,
+   "gain_pp": -0.1993921890838357,
+   "n_parents": 48,
+   "best_child_cost": 3352.8278447103316,
+   "sp_better": true,
+   "sp_reflux": 1,
+   "sp_status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+  },
+  {
+   "round": 9,
+   "pool_cols": 1573,
+   "n_new_cols": 136,
+   "sp_obj": 3166.3214559000003,
+   "gain_pp": -0.36319977156920036,
+   "n_parents": 50,
+   "best_child_cost": 3285.935030923109,
+   "sp_better": true,
+   "sp_reflux": 1,
+   "sp_status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+  },
+  {
+   "round": 10,
+   "pool_cols": 1737,
+   "n_new_cols": 164,
+   "sp_obj": 3165.7977555828343,
+   "gain_pp": -0.37967940719930704,
+   "n_parents": 52,
+   "best_child_cost": 3188.186575290572,
+   "sp_better": true,
+   "sp_reflux": 1,
+   "sp_status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+  },
+  {
+   "round": 11,
+   "pool_cols": 1885,
+   "n_new_cols": 148,
+   "sp_obj": 3165.7977555828343,
+   "gain_pp": -0.37967940719930704,
+   "n_parents": 52,
+   "best_child_cost": 3374.198870702156,
+   "sp_better": true,
+   "sp_reflux": 0,
+   "sp_status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+  },
+  {
+   "round": 12,
+   "pool_cols": 2028,
+   "n_new_cols": 143,
+   "sp_obj": 3165.7977555828343,
+   "gain_pp": -0.37967940719930704,
+   "n_parents": 52,
+   "best_child_cost": 3511.7957816915246,
+   "sp_better": true,
+   "sp_reflux": 0,
+   "sp_status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+  },
+  {
+   "round": 13,
+   "pool_cols": 2162,
+   "n_new_cols": 134,
+   "sp_obj": 3165.7977555828343,
+   "gain_pp": -0.37967940719930704,
+   "n_parents": 53,
+   "best_child_cost": 3327.811480295542,
+   "sp_better": true,
+   "sp_reflux": 0,
+   "sp_status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+  },
+  {
+   "round": 14,
+   "pool_cols": 2323,
+   "n_new_cols": 161,
+   "sp_obj": 3165.7977555828343,
+   "gain_pp": -0.37967940719930704,
+   "n_parents": 53,
+   "best_child_cost": 3374.8143799123714,
+   "sp_better": true,
+   "sp_reflux": 0,
+   "sp_status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+  },
+  {
+   "round": 15,
+   "pool_cols": 2477,
+   "n_new_cols": 154,
+   "sp_obj": 3165.7977555828343,
+   "gain_pp": -0.37967940719930704,
+   "n_parents": 54,
+   "best_child_cost": 3195.043514200282,
+   "sp_better": true,
+   "sp_reflux": 0,
+   "sp_status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+  },
+  {
+   "round": 16,
+   "pool_cols": 2646,
+   "n_new_cols": 169,
+   "sp_obj": 3165.7977555828343,
+   "gain_pp": -0.37967940719930704,
+   "n_parents": 55,
+   "best_child_cost": 3261.6820128504182,
+   "sp_better": true,
+   "sp_reflux": 0,
+   "sp_status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+  }
+ ],
+ "wall_s": 278.2
+}

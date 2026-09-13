@@ -1,0 +1,977 @@
+{
+ "pr15": {
+  "s42": {
+   "ours_cost": 2526.168023620271,
+   "pyvrp_cost": 2423.6943,
+   "ours": {
+    "n_routes": 20,
+    "route_len_mean": 12.0,
+    "route_len_std": 1.449137674618944,
+    "route_util_mean": 0.9308333333333334,
+    "route_util_std": 0.06670080144631133,
+    "depot_arc_mean": 23.299103472260192,
+    "intra_arc_mean": 103.00929770875337,
+    "sum_closed": 2526.168023620271,
+    "sum_depot_arcs": 465.9820694452038,
+    "sum_intra_arcs": 2060.1859541750673,
+    "sum_twoway_actual": 13490.695809973384,
+    "chain_save_frac": 0.8127473883331704,
+    "sum_mismatch_penalty": 617.3234499014834,
+    "depot_load_frac": [
+     0.9344,
+     0.9089,
+     0.9122,
+     0.9678
+    ],
+    "routes_per_depot": [
+     5,
+     5,
+     5,
+     5
+    ],
+    "geo_consistent_frac": 0.8208333333333333,
+    "rank_ge2_frac": 0.0375,
+    "mean_d_ratio_act_near": 1.0752522388839871,
+    "mean_extra_dist_mismatch": 7.17817965001725,
+    "n_mismatch": 43,
+    "mean_cust_depot_dist": 28.105616270777887,
+    "mean_radial_sum": 337.26739524933464,
+    "mean_closed_loop": 126.30840118101355,
+    "mean_ratio_closed_radial": 0.38472413516138004,
+    "purity_mean": 0.8320171495171496,
+    "tw_inversion_ratio": 0.3771045621045621,
+    "mean_slack_last": 100.00884200304618,
+    "narrow_pos_mean": 0.475030525030525,
+    "narrow_frac": 0.25833333333333336
+   },
+   "pyvrp": {
+    "n_routes": 20,
+    "route_len_mean": 12.0,
+    "route_len_std": 2.258317958127243,
+    "route_util_mean": 0.9308333333333332,
+    "route_util_std": 0.13030679610485063,
+    "depot_arc_mean": 20.924751458573194,
+    "intra_arc_mean": 100.25996554930504,
+    "sum_closed": 2423.694340157564,
+    "sum_depot_arcs": 418.4950291714639,
+    "sum_intra_arcs": 2005.1993109861007,
+    "sum_twoway_actual": 13507.183599778671,
+    "chain_save_frac": 0.8205625678918529,
+    "sum_mismatch_penalty": 633.8112397067714,
+    "depot_load_frac": [
+     0.9556,
+     0.8733,
+     0.9589,
+     0.9356
+    ],
+    "routes_per_depot": [
+     5,
+     5,
+     5,
+     5
+    ],
+    "geo_consistent_frac": 0.8291666666666667,
+    "rank_ge2_frac": 0.029166666666666667,
+    "mean_d_ratio_act_near": 1.0480703381063268,
+    "mean_extra_dist_mismatch": 7.7294053622777,
+    "n_mismatch": 41,
+    "mean_cust_depot_dist": 28.139965832872235,
+    "mean_radial_sum": 337.6795899944668,
+    "mean_closed_loop": 121.1847170078782,
+    "mean_ratio_closed_radial": 0.3957513747970016,
+    "purity_mean": 0.8514335664335665,
+    "tw_inversion_ratio": 0.34856698856698853,
+    "mean_slack_last": 74.95444922171072,
+    "narrow_pos_mean": 0.44432717819814593,
+    "narrow_frac": 0.25833333333333336
+   },
+   "pyvrp_feasible": true,
+   "shared_long_pairs": {
+    "3": [
+     22,
+     139
+    ],
+    "4": [
+     15,
+     112
+    ],
+    "5": [
+     12,
+     94
+    ],
+    "6": [
+     6,
+     54
+    ]
+   }
+  },
+  "s43": {
+   "ours_cost": 2559.15459907158,
+   "pyvrp_cost": 2422.9458,
+   "ours": {
+    "n_routes": 20,
+    "route_len_mean": 12.0,
+    "route_len_std": 2.32379000772445,
+    "route_util_mean": 0.9308333333333334,
+    "route_util_std": 0.08903590273203638,
+    "depot_arc_mean": 26.232154852133156,
+    "intra_arc_mean": 101.7255751014458,
+    "sum_closed": 2559.1545990715795,
+    "sum_depot_arcs": 524.6430970426632,
+    "sum_intra_arcs": 2034.5115020289159,
+    "sum_twoway_actual": 13802.540455263927,
+    "chain_save_frac": 0.8145881472062206,
+    "sum_mismatch_penalty": 929.1680951920331,
+    "depot_load_frac": [
+     0.8733,
+     0.9822,
+     0.8933,
+     0.9744
+    ],
+    "routes_per_depot": [
+     5,
+     5,
+     5,
+     5
+    ],
+    "geo_consistent_frac": 0.8166666666666667,
+    "rank_ge2_frac": 0.05416666666666667,
+    "mean_d_ratio_act_near": 1.0678233407738367,
+    "mean_extra_dist_mismatch": 10.55872835445492,
+    "n_mismatch": 44,
+    "mean_cust_depot_dist": 28.755292615133197,
+    "mean_radial_sum": 345.06351138159823,
+    "mean_closed_loop": 127.95772995357898,
+    "mean_ratio_closed_radial": 0.3947739137616131,
+    "purity_mean": 0.8457642357642357,
+    "tw_inversion_ratio": 0.34235597735597734,
+    "mean_slack_last": 91.38729744415807,
+    "narrow_pos_mean": 0.455110570433151,
+    "narrow_frac": 0.25833333333333336
+   },
+   "pyvrp": {
+    "n_routes": 20,
+    "route_len_mean": 12.0,
+    "route_len_std": 2.4083189157584592,
+    "route_util_mean": 0.9308333333333334,
+    "route_util_std": 0.14715905353404876,
+    "depot_arc_mean": 19.873680893335894,
+    "intra_arc_mean": 101.27360852742736,
+    "sum_closed": 2422.945788415265,
+    "sum_depot_arcs": 397.4736178667179,
+    "sum_intra_arcs": 2025.4721705485472,
+    "sum_twoway_actual": 13464.437454582705,
+    "chain_save_frac": 0.8200484946669198,
+    "sum_mismatch_penalty": 591.065094510806,
+    "depot_load_frac": [
+     0.9556,
+     0.8444,
+     0.9589,
+     0.9644
+    ],
+    "routes_per_depot": [
+     5,
+     5,
+     5,
+     5
+    ],
+    "geo_consistent_frac": 0.8333333333333334,
+    "rank_ge2_frac": 0.020833333333333332,
+    "mean_d_ratio_act_near": 1.0434330356637518,
+    "mean_extra_dist_mismatch": 7.388313681385076,
+    "n_mismatch": 40,
+    "mean_cust_depot_dist": 28.05091136371397,
+    "mean_radial_sum": 336.6109363645677,
+    "mean_closed_loop": 121.14728942076324,
+    "mean_ratio_closed_radial": 0.39671096031923775,
+    "purity_mean": 0.8538186813186812,
+    "tw_inversion_ratio": 0.32349594849594854,
+    "mean_slack_last": 85.17861915107791,
+    "narrow_pos_mean": 0.43058079912918623,
+    "narrow_frac": 0.25833333333333336
+   },
+   "pyvrp_feasible": true,
+   "shared_long_pairs": {
+    "3": [
+     21,
+     146
+    ],
+    "4": [
+     11,
+     93
+    ],
+    "5": [
+     7,
+     64
+    ],
+    "6": [
+     6,
+     57
+    ]
+   }
+  },
+  "s44": {
+   "ours_cost": 2534.780926246522,
+   "pyvrp_cost": 2439.1671,
+   "ours": {
+    "n_routes": 20,
+    "route_len_mean": 12.0,
+    "route_len_std": 1.9748417658131499,
+    "route_util_mean": 0.9308333333333334,
+    "route_util_std": 0.09373055353867632,
+    "depot_arc_mean": 20.149543717508376,
+    "intra_arc_mean": 106.5895025948178,
+    "sum_closed": 2534.7809262465234,
+    "sum_depot_arcs": 402.99087435016753,
+    "sum_intra_arcs": 2131.790051896356,
+    "sum_twoway_actual": 13586.65103244689,
+    "chain_save_frac": 0.8134359291194644,
+    "sum_mismatch_penalty": 713.2786723749932,
+    "depot_load_frac": [
+     0.9567,
+     0.8511,
+     0.9756,
+     0.94
+    ],
+    "routes_per_depot": [
+     5,
+     5,
+     5,
+     5
+    ],
+    "geo_consistent_frac": 0.8166666666666667,
+    "rank_ge2_frac": 0.03333333333333333,
+    "mean_d_ratio_act_near": 1.0805566864896972,
+    "mean_extra_dist_mismatch": 8.105439458806742,
+    "n_mismatch": 44,
+    "mean_cust_depot_dist": 28.30552298426436,
+    "mean_radial_sum": 339.6662758111724,
+    "mean_closed_loop": 126.73904631232617,
+    "mean_ratio_closed_radial": 0.38677965001433706,
+    "purity_mean": 0.8271488927738929,
+    "tw_inversion_ratio": 0.3898772061272061,
+    "mean_slack_last": 77.15963136707373,
+    "narrow_pos_mean": 0.45795145714500557,
+    "narrow_frac": 0.25833333333333336
+   },
+   "pyvrp": {
+    "n_routes": 20,
+    "route_len_mean": 12.0,
+    "route_len_std": 1.760681686165901,
+    "route_util_mean": 0.9308333333333334,
+    "route_util_std": 0.07085184943176312,
+    "depot_arc_mean": 23.58776036710039,
+    "intra_arc_mean": 98.37059599683158,
+    "sum_closed": 2439.1671272786393,
+    "sum_depot_arcs": 471.7552073420078,
+    "sum_intra_arcs": 1967.4119199366316,
+    "sum_twoway_actual": 13509.986241564628,
+    "chain_save_frac": 0.8194545069354451,
+    "sum_mismatch_penalty": 636.6138814927297,
+    "depot_load_frac": [
+     0.9522,
+     0.87,
+     0.9433,
+     0.9578
+    ],
+    "routes_per_depot": [
+     5,
+     5,
+     5,
+     5
+    ],
+    "geo_consistent_frac": 0.825,
+    "rank_ge2_frac": 0.004166666666666667,
+    "mean_d_ratio_act_near": 1.0684705425704064,
+    "mean_extra_dist_mismatch": 7.578736684437258,
+    "n_mismatch": 42,
+    "mean_cust_depot_dist": 28.14580466992631,
+    "mean_radial_sum": 337.7496560391158,
+    "mean_closed_loop": 121.95835636393197,
+    "mean_ratio_closed_radial": 0.37752111066547267,
+    "purity_mean": 0.8337121212121211,
+    "tw_inversion_ratio": 0.36589882339882335,
+    "mean_slack_last": 85.71019121155373,
+    "narrow_pos_mean": 0.46343002875260936,
+    "narrow_frac": 0.25833333333333336
+   },
+   "pyvrp_feasible": true,
+   "shared_long_pairs": {
+    "3": [
+     22,
+     158
+    ],
+    "4": [
+     16,
+     130
+    ],
+    "5": [
+     8,
+     75
+    ],
+    "6": [
+     6,
+     59
+    ]
+   }
+  }
+ },
+ "pr16": {
+  "s42": {
+   "ours_cost": 3014.2194693282195,
+   "pyvrp_cost": 2834.0,
+   "ours": {
+    "n_routes": 23,
+    "route_len_mean": 12.521739130434783,
+    "route_len_std": 2.103197673469187,
+    "route_util_mean": 0.9120496894409938,
+    "route_util_std": 0.11053136649409405,
+    "depot_arc_mean": 24.455213081243247,
+    "intra_arc_mean": 106.59780732433157,
+    "sum_closed": 3014.2194693282204,
+    "sum_depot_arcs": 562.4699008685947,
+    "sum_intra_arcs": 2451.749568459626,
+    "sum_twoway_actual": 15591.30925326712,
+    "chain_save_frac": 0.8066731009971726,
+    "sum_mismatch_penalty": 723.2115248529707,
+    "depot_load_frac": [
+     0.8914,
+     0.7619,
+     0.9648,
+     0.8781
+    ],
+    "routes_per_depot": [
+     6,
+     5,
+     6,
+     6
+    ],
+    "geo_consistent_frac": 0.90625,
+    "rank_ge2_frac": 0.0,
+    "mean_d_ratio_act_near": 1.0529322006774866,
+    "mean_extra_dist_mismatch": 13.392806015795754,
+    "n_mismatch": 27,
+    "mean_cust_depot_dist": 27.068245231366518,
+    "mean_radial_sum": 338.94150550580684,
+    "mean_closed_loop": 131.0530204055748,
+    "mean_ratio_closed_radial": 0.40677516029357713,
+    "purity_mean": 0.9099519441910746,
+    "tw_inversion_ratio": 0.33168498168498173,
+    "mean_slack_last": 79.68368720047425,
+    "narrow_pos_mean": 0.42994374452707784,
+    "narrow_frac": 0.25
+   },
+   "pyvrp": {
+    "n_routes": 22,
+    "route_len_mean": 13.090909090909092,
+    "route_len_std": 2.1931523785117855,
+    "route_util_mean": 0.9535064935064934,
+    "route_util_std": 0.04747565975868777,
+    "depot_arc_mean": 22.06861365779557,
+    "intra_arc_mean": 107.0735736147878,
+    "sum_closed": 2841.128119996834,
+    "sum_depot_arcs": 485.5095004715026,
+    "sum_intra_arcs": 2355.6186195253317,
+    "sum_twoway_actual": 15467.143346523737,
+    "chain_save_frac": 0.8163120327817107,
+    "sum_mismatch_penalty": 599.0456181095911,
+    "depot_load_frac": [
+     0.8057,
+     0.9581,
+     0.9762,
+     0.7562
+    ],
+    "routes_per_depot": [
+     5,
+     6,
+     6,
+     5
+    ],
+    "geo_consistent_frac": 0.90625,
+    "rank_ge2_frac": 0.0,
+    "mean_d_ratio_act_near": 1.027995295859291,
+    "mean_extra_dist_mismatch": 11.093437372399839,
+    "n_mismatch": 27,
+    "mean_cust_depot_dist": 26.85267942104815,
+    "mean_radial_sum": 351.5259851482667,
+    "mean_closed_loop": 129.14218727258336,
+    "mean_ratio_closed_radial": 0.3887497911008854,
+    "purity_mean": 0.910048915730734,
+    "tw_inversion_ratio": 0.3491205763933036,
+    "mean_slack_last": 75.32875495075396,
+    "narrow_pos_mean": 0.4810394806718336,
+    "narrow_frac": 0.25
+   },
+   "pyvrp_feasible": false,
+   "shared_long_pairs": {
+    "3": [
+     27,
+     174
+    ],
+    "4": [
+     16,
+     111
+    ],
+    "5": [
+     7,
+     55
+    ],
+    "6": [
+     4,
+     31
+    ]
+   }
+  },
+  "s43": {
+   "ours_cost": 2966.4254934681803,
+   "pyvrp_cost": 2834.0,
+   "ours": {
+    "n_routes": 24,
+    "route_len_mean": 12.0,
+    "route_len_std": 2.160246899469287,
+    "route_util_mean": 0.8740476190476191,
+    "route_util_std": 0.1339862838615899,
+    "depot_arc_mean": 22.065770370246156,
+    "intra_arc_mean": 101.5352918575948,
+    "sum_closed": 2966.4254934681826,
+    "sum_depot_arcs": 529.5784888859077,
+    "sum_intra_arcs": 2436.847004582275,
+    "sum_twoway_actual": 15363.096269658989,
+    "chain_save_frac": 0.8069122629058402,
+    "sum_mismatch_penalty": 494.99854124484386,
+    "depot_load_frac": [
+     0.9429,
+     0.7962,
+     0.961,
+     0.7962
+    ],
+    "routes_per_depot": [
+     6,
+     6,
+     6,
+     6
+    ],
+    "geo_consistent_frac": 0.90625,
+    "rank_ge2_frac": 0.006944444444444444,
+    "mean_d_ratio_act_near": 1.0325471367495256,
+    "mean_extra_dist_mismatch": 9.166639652682294,
+    "n_mismatch": 27,
+    "mean_cust_depot_dist": 26.672042134824633,
+    "mean_radial_sum": 320.0645056178956,
+    "mean_closed_loop": 123.60106222784094,
+    "mean_ratio_closed_radial": 0.4198689777889711,
+    "purity_mean": 0.9108796296296297,
+    "tw_inversion_ratio": 0.3322867968088556,
+    "mean_slack_last": 88.8875079433832,
+    "narrow_pos_mean": 0.4582126014417681,
+    "narrow_frac": 0.25
+   },
+   "pyvrp": {
+    "n_routes": 23,
+    "route_len_mean": 12.521739130434783,
+    "route_len_std": 2.8721990547676075,
+    "route_util_mean": 0.9120496894409937,
+    "route_util_std": 0.17428460751453717,
+    "depot_arc_mean": 21.532087086893434,
+    "intra_arc_mean": 102.35965497513294,
+    "sum_closed": 2849.5100674266073,
+    "sum_depot_arcs": 495.238002998549,
+    "sum_intra_arcs": 2354.2720644280575,
+    "sum_twoway_actual": 15536.817950450453,
+    "chain_save_frac": 0.816596289116975,
+    "sum_mismatch_penalty": 668.7202220363059,
+    "depot_load_frac": [
+     0.6914,
+     0.9143,
+     0.9819,
+     0.9086
+    ],
+    "routes_per_depot": [
+     5,
+     6,
+     6,
+     6
+    ],
+    "geo_consistent_frac": 0.8958333333333334,
+    "rank_ge2_frac": 0.0,
+    "mean_d_ratio_act_near": 1.044050666394148,
+    "mean_extra_dist_mismatch": 11.14533703393843,
+    "n_mismatch": 30,
+    "mean_cust_depot_dist": 26.973642275087585,
+    "mean_radial_sum": 337.75691196631414,
+    "mean_closed_loop": 123.89174206202641,
+    "mean_ratio_closed_radial": 0.41474830370751187,
+    "purity_mean": 0.9112524584492548,
+    "tw_inversion_ratio": 0.3593180338603679,
+    "mean_slack_last": 85.31572635744438,
+    "narrow_pos_mean": 0.4617326731910065,
+    "narrow_frac": 0.25
+   },
+   "pyvrp_feasible": false,
+   "shared_long_pairs": {
+    "3": [
+     27,
+     162
+    ],
+    "4": [
+     6,
+     46
+    ],
+    "5": [
+     5,
+     41
+    ],
+    "6": [
+     3,
+     24
+    ]
+   }
+  },
+  "s44": {
+   "ours_cost": 3115.1438796156513,
+   "pyvrp_cost": 2832.0,
+   "ours": {
+    "n_routes": 23,
+    "route_len_mean": 12.521739130434783,
+    "route_len_std": 2.1441440010326875,
+    "route_util_mean": 0.9120496894409938,
+    "route_util_std": 0.1112610829843934,
+    "depot_arc_mean": 23.411373829799142,
+    "intra_arc_mean": 112.0296644143597,
+    "sum_closed": 3115.143879615653,
+    "sum_depot_arcs": 538.4615980853803,
+    "sum_intra_arcs": 2576.682281530273,
+    "sum_twoway_actual": 15547.423064100934,
+    "chain_save_frac": 0.7996359996912585,
+    "sum_mismatch_penalty": 679.3253356867826,
+    "depot_load_frac": [
+     0.7886,
+     0.8295,
+     0.9667,
+     0.9114
+    ],
+    "routes_per_depot": [
+     5,
+     6,
+     6,
+     6
+    ],
+    "geo_consistent_frac": 0.9131944444444444,
+    "rank_ge2_frac": 0.017361111111111112,
+    "mean_d_ratio_act_near": 1.0430844784727438,
+    "mean_extra_dist_mismatch": 13.586506713735652,
+    "n_mismatch": 25,
+    "mean_cust_depot_dist": 26.992053930730773,
+    "mean_radial_sum": 337.9874579152375,
+    "mean_closed_loop": 135.44103824415882,
+    "mean_ratio_closed_radial": 0.42900774741560294,
+    "purity_mean": 0.9116562785041047,
+    "tw_inversion_ratio": 0.32832073439490317,
+    "mean_slack_last": 88.72207810927046,
+    "narrow_pos_mean": 0.4707129868588201,
+    "narrow_frac": 0.25
+   },
+   "pyvrp": {
+    "n_routes": 22,
+    "route_len_mean": 13.090909090909092,
+    "route_len_std": 1.928473039599675,
+    "route_util_mean": 0.9535064935064935,
+    "route_util_std": 0.07206048695177383,
+    "depot_arc_mean": 20.35347587301732,
+    "intra_arc_mean": 108.71516764887643,
+    "sum_closed": 2839.510157481663,
+    "sum_depot_arcs": 447.776469206381,
+    "sum_intra_arcs": 2391.7336882752816,
+    "sum_twoway_actual": 15343.220991642049,
+    "chain_save_frac": 0.8149338943219004,
+    "sum_mismatch_penalty": 475.1232632279049,
+    "depot_load_frac": [
+     0.8181,
+     0.9143,
+     0.9638,
+     0.8
+    ],
+    "routes_per_depot": [
+     5,
+     6,
+     6,
+     5
+    ],
+    "geo_consistent_frac": 0.9201388888888888,
+    "rank_ge2_frac": 0.0,
+    "mean_d_ratio_act_near": 1.0307541221691285,
+    "mean_extra_dist_mismatch": 10.328766591910975,
+    "n_mismatch": 23,
+    "mean_cust_depot_dist": 26.637536443823002,
+    "mean_radial_sum": 348.70956799186473,
+    "mean_closed_loop": 129.0686435218938,
+    "mean_ratio_closed_radial": 0.3888101863078198,
+    "purity_mean": 0.9207234684507412,
+    "tw_inversion_ratio": 0.3383551460423118,
+    "mean_slack_last": 84.61507905848902,
+    "narrow_pos_mean": 0.4704953316472924,
+    "narrow_frac": 0.25
+   },
+   "pyvrp_feasible": false,
+   "shared_long_pairs": {
+    "3": [
+     25,
+     152
+    ],
+    "4": [
+     13,
+     99
+    ],
+    "5": [
+     5,
+     43
+    ],
+    "6": [
+     2,
+     23
+    ]
+   }
+  }
+ },
+ "pr20": {
+  "s42": {
+   "ours_cost": 3177.8634486864103,
+   "pyvrp_cost": 2975.0908,
+   "ours": {
+    "n_routes": 24,
+    "route_len_mean": 12.0,
+    "route_len_std": 1.6072751268321592,
+    "route_util_mean": 0.9436274509803922,
+    "route_util_std": 0.051670945240858655,
+    "depot_arc_mean": 25.42497803522221,
+    "intra_arc_mean": 106.98599899337817,
+    "sum_closed": 3177.8634486864094,
+    "sum_depot_arcs": 610.199472845333,
+    "sum_intra_arcs": 2567.663975841076,
+    "sum_twoway_actual": 16738.914578437427,
+    "chain_save_frac": 0.8101511639960193,
+    "sum_mismatch_penalty": 1447.116044552289,
+    "depot_load_frac": [
+     0.9265,
+     0.9485,
+     0.9676,
+     0.9662,
+     0.9191,
+     0.9338
+    ],
+    "routes_per_depot": [
+     4,
+     4,
+     4,
+     4,
+     4,
+     4
+    ],
+    "geo_consistent_frac": 0.7708333333333334,
+    "rank_ge2_frac": 0.059027777777777776,
+    "mean_d_ratio_act_near": 1.1570419051806236,
+    "mean_extra_dist_mismatch": 10.963000337517341,
+    "n_mismatch": 66,
+    "mean_cust_depot_dist": 29.060615587564964,
+    "mean_radial_sum": 348.72738705077956,
+    "mean_closed_loop": 132.4109770286004,
+    "mean_ratio_closed_radial": 0.4127715897650015,
+    "purity_mean": 0.7736390923890925,
+    "tw_inversion_ratio": 0.3171828171828172,
+    "mean_slack_last": 94.11890048019144,
+    "narrow_pos_mean": 0.4153103278103278,
+    "narrow_frac": 0.2569444444444444
+   },
+   "pyvrp": {
+    "n_routes": 24,
+    "route_len_mean": 12.0,
+    "route_len_std": 2.0615528128088303,
+    "route_util_mean": 0.9436274509803922,
+    "route_util_std": 0.09696841699572033,
+    "depot_arc_mean": 28.390382981407004,
+    "intra_arc_mean": 95.57173509575706,
+    "sum_closed": 2975.090833851938,
+    "sum_depot_arcs": 681.3691915537681,
+    "sum_intra_arcs": 2293.7216422981696,
+    "sum_twoway_actual": 16185.614104795328,
+    "chain_save_frac": 0.8161891903149658,
+    "sum_mismatch_penalty": 893.8155709101893,
+    "depot_load_frac": [
+     0.9471,
+     0.9206,
+     0.9912,
+     0.975,
+     0.9765,
+     0.8515
+    ],
+    "routes_per_depot": [
+     4,
+     4,
+     4,
+     4,
+     4,
+     4
+    ],
+    "geo_consistent_frac": 0.8263888888888888,
+    "rank_ge2_frac": 0.03819444444444445,
+    "mean_d_ratio_act_near": 1.0905234430025523,
+    "mean_extra_dist_mismatch": 8.938155709101892,
+    "n_mismatch": 50,
+    "mean_cust_depot_dist": 28.100024487491872,
+    "mean_radial_sum": 337.2002938499025,
+    "mean_closed_loop": 123.96211807716408,
+    "mean_ratio_closed_radial": 0.4303494028319868,
+    "purity_mean": 0.8313968438968439,
+    "tw_inversion_ratio": 0.3392304454804454,
+    "mean_slack_last": 96.68148549663682,
+    "narrow_pos_mean": 0.4207989832989833,
+    "narrow_frac": 0.2569444444444444
+   },
+   "pyvrp_feasible": true,
+   "shared_long_pairs": {
+    "3": [
+     22,
+     157
+    ],
+    "4": [
+     10,
+     81
+    ],
+    "5": [
+     5,
+     50
+    ],
+    "6": [
+     4,
+     40
+    ]
+   }
+  },
+  "s43": {
+   "ours_cost": 3305.507056532357,
+   "pyvrp_cost": 2976.1919,
+   "ours": {
+    "n_routes": 24,
+    "route_len_mean": 12.0,
+    "route_len_std": 2.140872096444188,
+    "route_util_mean": 0.9436274509803922,
+    "route_util_std": 0.08243897233674427,
+    "depot_arc_mean": 29.9083739990735,
+    "intra_arc_mean": 107.8210866897747,
+    "sum_closed": 3305.5070565323567,
+    "sum_depot_arcs": 717.800975977764,
+    "sum_intra_arcs": 2587.706080554593,
+    "sum_twoway_actual": 16782.18932833627,
+    "chain_save_frac": 0.8030348131664146,
+    "sum_mismatch_penalty": 1490.3907944511288,
+    "depot_load_frac": [
+     0.9103,
+     0.9,
+     0.975,
+     0.9662,
+     0.9559,
+     0.9544
+    ],
+    "routes_per_depot": [
+     4,
+     4,
+     4,
+     4,
+     4,
+     4
+    ],
+    "geo_consistent_frac": 0.78125,
+    "rank_ge2_frac": 0.052083333333333336,
+    "mean_d_ratio_act_near": 1.1346142016449154,
+    "mean_extra_dist_mismatch": 11.828498368659751,
+    "n_mismatch": 63,
+    "mean_cust_depot_dist": 29.135745361694894,
+    "mean_radial_sum": 349.6289443403387,
+    "mean_closed_loop": 137.7294606888482,
+    "mean_ratio_closed_radial": 0.4345770669974868,
+    "purity_mean": 0.7880895146520146,
+    "tw_inversion_ratio": 0.3860245078995079,
+    "mean_slack_last": 80.59292899228585,
+    "narrow_pos_mean": 0.4191550191550192,
+    "narrow_frac": 0.2569444444444444
+   },
+   "pyvrp": {
+    "n_routes": 24,
+    "route_len_mean": 12.0,
+    "route_len_std": 2.1984843263788196,
+    "route_util_mean": 0.9436274509803922,
+    "route_util_std": 0.09676003723564759,
+    "depot_arc_mean": 27.96663067907393,
+    "intra_arc_mean": 96.04136500420539,
+    "sum_closed": 2976.1918963987036,
+    "sum_depot_arcs": 671.1991362977743,
+    "sum_intra_arcs": 2304.9927601009294,
+    "sum_twoway_actual": 16181.528202325428,
+    "chain_save_frac": 0.816074732918551,
+    "sum_mismatch_penalty": 889.7296684402901,
+    "depot_load_frac": [
+     0.9471,
+     0.9206,
+     0.9882,
+     0.975,
+     0.9794,
+     0.8515
+    ],
+    "routes_per_depot": [
+     4,
+     4,
+     4,
+     4,
+     4,
+     4
+    ],
+    "geo_consistent_frac": 0.8229166666666666,
+    "rank_ge2_frac": 0.034722222222222224,
+    "mean_d_ratio_act_near": 1.090102787986991,
+    "mean_extra_dist_mismatch": 8.72283988666951,
+    "n_mismatch": 51,
+    "mean_cust_depot_dist": 28.092930906814964,
+    "mean_radial_sum": 337.1151708817796,
+    "mean_closed_loop": 124.00799568327932,
+    "mean_ratio_closed_radial": 0.4262567458382609,
+    "purity_mean": 0.8324041699041699,
+    "tw_inversion_ratio": 0.33851911976911975,
+    "mean_slack_last": 97.37994599473093,
+    "narrow_pos_mean": 0.4360385485385485,
+    "narrow_frac": 0.2569444444444444
+   },
+   "pyvrp_feasible": true,
+   "shared_long_pairs": {
+    "3": [
+     24,
+     151
+    ],
+    "4": [
+     8,
+     63
+    ],
+    "5": [
+     4,
+     37
+    ],
+    "6": [
+     3,
+     28
+    ]
+   }
+  },
+  "s44": {
+   "ours_cost": 3332.8983361924675,
+   "pyvrp_cost": 2973.92,
+   "ours": {
+    "n_routes": 24,
+    "route_len_mean": 12.0,
+    "route_len_std": 1.7559422921421233,
+    "route_util_mean": 0.9436274509803922,
+    "route_util_std": 0.061152820340534514,
+    "depot_arc_mean": 28.447187240839384,
+    "intra_arc_mean": 110.42357676717997,
+    "sum_closed": 3332.8983361924647,
+    "sum_depot_arcs": 682.7324937801452,
+    "sum_intra_arcs": 2650.1658424123193,
+    "sum_twoway_actual": 18156.79207074066,
+    "chain_save_frac": 0.8164379300480413,
+    "sum_mismatch_penalty": 2864.9935368555257,
+    "depot_load_frac": [
+     0.9088,
+     0.9015,
+     0.9941,
+     0.9279,
+     0.9662,
+     0.9632
+    ],
+    "routes_per_depot": [
+     4,
+     4,
+     4,
+     4,
+     4,
+     4
+    ],
+    "geo_consistent_frac": 0.7118055555555556,
+    "rank_ge2_frac": 0.11805555555555555,
+    "mean_d_ratio_act_near": 1.355440561188023,
+    "mean_extra_dist_mismatch": 17.25899720997305,
+    "n_mismatch": 83,
+    "mean_cust_depot_dist": 31.52220845614697,
+    "mean_radial_sum": 378.26650147376364,
+    "mean_closed_loop": 138.87076400801936,
+    "mean_ratio_closed_radial": 0.3974044158830366,
+    "purity_mean": 0.7218323343323344,
+    "tw_inversion_ratio": 0.33975468975468975,
+    "mean_slack_last": 69.91485731865073,
+    "narrow_pos_mean": 0.4426945426945427,
+    "narrow_frac": 0.2569444444444444
+   },
+   "pyvrp": {
+    "n_routes": 24,
+    "route_len_mean": 12.0,
+    "route_len_std": 2.217355782608345,
+    "route_util_mean": 0.9436274509803922,
+    "route_util_std": 0.09664076135406942,
+    "depot_arc_mean": 28.050859372589667,
+    "intra_arc_mean": 95.8624753590863,
+    "sum_closed": 2973.9200335602227,
+    "sum_depot_arcs": 673.220624942152,
+    "sum_intra_arcs": 2300.699408618071,
+    "sum_twoway_actual": 16181.528202325428,
+    "chain_save_frac": 0.8162151314526125,
+    "sum_mismatch_penalty": 889.7296684402901,
+    "depot_load_frac": [
+     0.9471,
+     0.9206,
+     0.9882,
+     0.975,
+     0.9794,
+     0.8515
+    ],
+    "routes_per_depot": [
+     4,
+     4,
+     4,
+     4,
+     4,
+     4
+    ],
+    "geo_consistent_frac": 0.8229166666666666,
+    "rank_ge2_frac": 0.034722222222222224,
+    "mean_d_ratio_act_near": 1.090102787986991,
+    "mean_extra_dist_mismatch": 8.72283988666951,
+    "n_mismatch": 51,
+    "mean_cust_depot_dist": 28.092930906814964,
+    "mean_radial_sum": 337.1151708817796,
+    "mean_closed_loop": 123.91333473167595,
+    "mean_ratio_closed_radial": 0.4247561861749247,
+    "purity_mean": 0.831139288951789,
+    "tw_inversion_ratio": 0.3534697940947941,
+    "mean_slack_last": 77.61401508884204,
+    "narrow_pos_mean": 0.4187173562173563,
+    "narrow_frac": 0.2569444444444444
+   },
+   "pyvrp_feasible": true,
+   "shared_long_pairs": {
+    "3": [
+     26,
+     176
+    ],
+    "4": [
+     12,
+     95
+    ],
+    "5": [
+     10,
+     83
+    ],
+    "6": [
+     6,
+     51
+    ]
+   }
+  }
+ }
+}

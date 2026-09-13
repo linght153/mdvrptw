@@ -1,0 +1,17 @@
+{
+ "instance": "pr20",
+ "seed": 42,
+ "arm": "cur",
+ "arm_tag": "cur",
+ "iterations": 6000,
+ "wall_s": 204.7,
+ "best_feasible_cost": 3307.9305,
+ "vehicles": 24,
+ "tw_violations": 0,
+ "served": 288,
+ "num_customers": 288,
+ "archive_entries": 20,
+ "archive_distinct_routes": 77,
+ "archive_mean_jaccard": 0.5642,
+ "cx_iterations": 0
+}

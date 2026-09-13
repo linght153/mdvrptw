@@ -1,0 +1,51 @@
+{
+ "instance": "pr20",
+ "seed": 44,
+ "arm": "popcxg",
+ "arm_tag": "popcxg",
+ "iterations": 6000,
+ "wall_s": 353.8,
+ "best_feasible_cost": 3265.1767,
+ "vehicles": 24,
+ "tw_violations": 0,
+ "served": 288,
+ "num_customers": 288,
+ "archive_entries": 20,
+ "archive_distinct_routes": 66,
+ "archive_mean_jaccard": 0.6026,
+ "cx_iterations": 0,
+ "probe_stats": {
+  "adds": 424,
+  "accepts": 511,
+  "equal_accepts": 30,
+  "restarts": 0,
+  "stagnation_peak": 134
+ },
+ "population_stats": {
+  "init_members": 8,
+  "refresh_events": 0,
+  "member_refresh_events": 134,
+  "member_advances": {
+   "0": 52,
+   "1": 67,
+   "2": 59,
+   "3": 94,
+   "4": 57,
+   "5": 36,
+   "6": 66,
+   "7": 46
+  },
+  "dc_min_mean": 0.2335611647291368,
+  "cx_attempts": 1057,
+  "cx_children": 1057,
+  "cx_duplicates": 7851,
+  "cx_novel_route_keys": 3530,
+  "cx_gate_success": 103,
+  "cx_gate_fail": 954
+ },
+ "pool_final_spread": 0.119,
+ "pool_feasible_members": 8,
+ "best_mismatch_penalty": 1620.5,
+ "best_n_mismatch": 74,
+ "best_geo_consistent_frac": 0.7431
+}
